@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/nico-galin/static/css/main.b5b73e81.chunk.css",
-    "main.js": "/nico-galin/static/js/main.c16e7780.chunk.js",
-    "main.js.map": "/nico-galin/static/js/main.c16e7780.chunk.js.map",
-    "runtime-main.js": "/nico-galin/static/js/runtime-main.1328278d.js",
-    "runtime-main.js.map": "/nico-galin/static/js/runtime-main.1328278d.js.map",
-    "static/js/2.016fabfb.chunk.js": "/nico-galin/static/js/2.016fabfb.chunk.js",
-    "static/js/2.016fabfb.chunk.js.map": "/nico-galin/static/js/2.016fabfb.chunk.js.map",
-    "index.html": "/nico-galin/index.html",
-    "precache-manifest.7d9c3a0c3244e3717e34cbe4a46a2523.js": "/nico-galin/precache-manifest.7d9c3a0c3244e3717e34cbe4a46a2523.js",
-    "service-worker.js": "/nico-galin/service-worker.js",
-    "static/css/main.b5b73e81.chunk.css.map": "/nico-galin/static/css/main.b5b73e81.chunk.css.map",
-    "static/js/2.016fabfb.chunk.js.LICENSE.txt": "/nico-galin/static/js/2.016fabfb.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/nico-galin/static/media/logo.8dad8028.svg"
+    "main.css": "/nico-galin.github.io/static/css/main.b5b73e81.chunk.css",
+    "main.js": "/nico-galin.github.io/static/js/main.2cc575be.chunk.js",
+    "main.js.map": "/nico-galin.github.io/static/js/main.2cc575be.chunk.js.map",
+    "runtime-main.js": "/nico-galin.github.io/static/js/runtime-main.8532362d.js",
+    "runtime-main.js.map": "/nico-galin.github.io/static/js/runtime-main.8532362d.js.map",
+    "static/js/2.016fabfb.chunk.js": "/nico-galin.github.io/static/js/2.016fabfb.chunk.js",
+    "static/js/2.016fabfb.chunk.js.map": "/nico-galin.github.io/static/js/2.016fabfb.chunk.js.map",
+    "index.html": "/nico-galin.github.io/index.html",
+    "precache-manifest.37ffe2f5fa0b20ebd1fd3d1702eeec44.js": "/nico-galin.github.io/precache-manifest.37ffe2f5fa0b20ebd1fd3d1702eeec44.js",
+    "service-worker.js": "/nico-galin.github.io/service-worker.js",
+    "static/css/main.b5b73e81.chunk.css.map": "/nico-galin.github.io/static/css/main.b5b73e81.chunk.css.map",
+    "static/js/2.016fabfb.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.016fabfb.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/nico-galin.github.io/static/media/logo.8dad8028.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1328278d.js",
+    "static/js/runtime-main.8532362d.js",
     "static/js/2.016fabfb.chunk.js",
     "static/css/main.b5b73e81.chunk.css",
-    "static/js/main.c16e7780.chunk.js"
+    "static/js/main.2cc575be.chunk.js"
   ]
 }
