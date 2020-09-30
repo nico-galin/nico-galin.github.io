@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29a073c10faacfaed8e800e1ffa3b579",
+    "revision": "5ac68aaafd15d9904027776c25540004",
     "url": "/nico-galin.github.io/index.html"
   },
   {
-    "revision": "dbe903fb82ddd1f3adf5",
-    "url": "/nico-galin.github.io/static/css/main.c441706d.chunk.css"
+    "revision": "5a04e2a13fc0c83c56fb",
+    "url": "/nico-galin.github.io/static/css/main.39a9c7f5.chunk.css"
   },
   {
     "revision": "37662abbab08670abd24",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nico-galin.github.io/static/js/2.49916669.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dbe903fb82ddd1f3adf5",
-    "url": "/nico-galin.github.io/static/js/main.bbe44198.chunk.js"
+    "revision": "5a04e2a13fc0c83c56fb",
+    "url": "/nico-galin.github.io/static/js/main.4613fb81.chunk.js"
   },
   {
     "revision": "791d23f89f7a036b3b53",
