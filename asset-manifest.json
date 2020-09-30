@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nico-galin.github.io/static/css/main.84211073.chunk.css",
-    "main.js": "/nico-galin.github.io/static/js/main.9992b7b8.chunk.js",
-    "main.js.map": "/nico-galin.github.io/static/js/main.9992b7b8.chunk.js.map",
+    "main.js": "/nico-galin.github.io/static/js/main.98315d9d.chunk.js",
+    "main.js.map": "/nico-galin.github.io/static/js/main.98315d9d.chunk.js.map",
     "runtime-main.js": "/nico-galin.github.io/static/js/runtime-main.8532362d.js",
     "runtime-main.js.map": "/nico-galin.github.io/static/js/runtime-main.8532362d.js.map",
     "static/js/2.6a68b2c0.chunk.js": "/nico-galin.github.io/static/js/2.6a68b2c0.chunk.js",
     "static/js/2.6a68b2c0.chunk.js.map": "/nico-galin.github.io/static/js/2.6a68b2c0.chunk.js.map",
     "index.html": "/nico-galin.github.io/index.html",
-    "precache-manifest.9f732abbfe59f1c5ade6c9cd3e786260.js": "/nico-galin.github.io/precache-manifest.9f732abbfe59f1c5ade6c9cd3e786260.js",
+    "precache-manifest.6354a9ae641464afd3d26e433545d036.js": "/nico-galin.github.io/precache-manifest.6354a9ae641464afd3d26e433545d036.js",
     "service-worker.js": "/nico-galin.github.io/service-worker.js",
     "static/css/main.84211073.chunk.css.map": "/nico-galin.github.io/static/css/main.84211073.chunk.css.map",
     "static/js/2.6a68b2c0.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.6a68b2c0.chunk.js.LICENSE.txt",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.8532362d.js",
     "static/js/2.6a68b2c0.chunk.js",
     "static/css/main.84211073.chunk.css",
-    "static/js/main.9992b7b8.chunk.js"
+    "static/js/main.98315d9d.chunk.js"
   ]
 }
