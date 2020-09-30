@@ -1,23 +1,34 @@
 {
   "files": {
-    "main.css": "/nico-galin.github.io/static/css/main.e93ebcc8.chunk.css",
-    "main.js": "/nico-galin.github.io/static/js/main.18fae800.chunk.js",
-    "main.js.map": "/nico-galin.github.io/static/js/main.18fae800.chunk.js.map",
+    "main.css": "/nico-galin.github.io/static/css/main.e08798c4.chunk.css",
+    "main.js": "/nico-galin.github.io/static/js/main.cdd6c027.chunk.js",
+    "main.js.map": "/nico-galin.github.io/static/js/main.cdd6c027.chunk.js.map",
     "runtime-main.js": "/nico-galin.github.io/static/js/runtime-main.8532362d.js",
     "runtime-main.js.map": "/nico-galin.github.io/static/js/runtime-main.8532362d.js.map",
-    "static/js/2.de06ef4a.chunk.js": "/nico-galin.github.io/static/js/2.de06ef4a.chunk.js",
-    "static/js/2.de06ef4a.chunk.js.map": "/nico-galin.github.io/static/js/2.de06ef4a.chunk.js.map",
+    "static/js/2.859f39ef.chunk.js": "/nico-galin.github.io/static/js/2.859f39ef.chunk.js",
+    "static/js/2.859f39ef.chunk.js.map": "/nico-galin.github.io/static/js/2.859f39ef.chunk.js.map",
     "index.html": "/nico-galin.github.io/index.html",
-    "precache-manifest.6bdca57ebe510df21206dcdfb07a472f.js": "/nico-galin.github.io/precache-manifest.6bdca57ebe510df21206dcdfb07a472f.js",
+    "precache-manifest.d9c339fede8a11d049fe679468a20227.js": "/nico-galin.github.io/precache-manifest.d9c339fede8a11d049fe679468a20227.js",
     "service-worker.js": "/nico-galin.github.io/service-worker.js",
-    "static/css/main.e93ebcc8.chunk.css.map": "/nico-galin.github.io/static/css/main.e93ebcc8.chunk.css.map",
-    "static/js/2.de06ef4a.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.de06ef4a.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/nico-galin.github.io/static/media/logo.8dad8028.svg"
+    "static/css/main.e08798c4.chunk.css.map": "/nico-galin.github.io/static/css/main.e08798c4.chunk.css.map",
+    "static/js/2.859f39ef.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.859f39ef.chunk.js.LICENSE.txt",
+    "static/media/aperture.png": "/nico-galin.github.io/static/media/aperture.b24351ea.png",
+    "static/media/berry.png": "/nico-galin.github.io/static/media/berry.94abc9a5.png",
+    "static/media/blaze.png": "/nico-galin.github.io/static/media/blaze.e93ddf1f.png",
+    "static/media/croissant.png": "/nico-galin.github.io/static/media/croissant.6f537579.png",
+    "static/media/cubes.png": "/nico-galin.github.io/static/media/cubes.2b3feed7.png",
+    "static/media/fox.png": "/nico-galin.github.io/static/media/fox.9c1eae97.png",
+    "static/media/gem.png": "/nico-galin.github.io/static/media/gem.db79143c.png",
+    "static/media/jobylogo.png": "/nico-galin.github.io/static/media/jobylogo.f95c87a8.png",
+    "static/media/pin.png": "/nico-galin.github.io/static/media/pin.d0b85aaf.png",
+    "static/media/range.png": "/nico-galin.github.io/static/media/range.95d49cbc.png",
+    "static/media/target.png": "/nico-galin.github.io/static/media/target.b973a341.png",
+    "static/media/weight.png": "/nico-galin.github.io/static/media/weight.15705328.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8532362d.js",
-    "static/js/2.de06ef4a.chunk.js",
-    "static/css/main.e93ebcc8.chunk.css",
-    "static/js/main.18fae800.chunk.js"
+    "static/js/2.859f39ef.chunk.js",
+    "static/css/main.e08798c4.chunk.css",
+    "static/js/main.cdd6c027.chunk.js"
   ]
 }
