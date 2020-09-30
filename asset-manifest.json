@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nico-galin.github.io/static/css/main.84211073.chunk.css",
-    "main.js": "/nico-galin.github.io/static/js/main.ac678335.chunk.js",
-    "main.js.map": "/nico-galin.github.io/static/js/main.ac678335.chunk.js.map",
+    "main.css": "/nico-galin.github.io/static/css/main.c441706d.chunk.css",
+    "main.js": "/nico-galin.github.io/static/js/main.bbe44198.chunk.js",
+    "main.js.map": "/nico-galin.github.io/static/js/main.bbe44198.chunk.js.map",
     "runtime-main.js": "/nico-galin.github.io/static/js/runtime-main.8532362d.js",
     "runtime-main.js.map": "/nico-galin.github.io/static/js/runtime-main.8532362d.js.map",
-    "static/js/2.3f2a2470.chunk.js": "/nico-galin.github.io/static/js/2.3f2a2470.chunk.js",
-    "static/js/2.3f2a2470.chunk.js.map": "/nico-galin.github.io/static/js/2.3f2a2470.chunk.js.map",
+    "static/js/2.49916669.chunk.js": "/nico-galin.github.io/static/js/2.49916669.chunk.js",
+    "static/js/2.49916669.chunk.js.map": "/nico-galin.github.io/static/js/2.49916669.chunk.js.map",
     "index.html": "/nico-galin.github.io/index.html",
-    "precache-manifest.cb043be1df319dd5c112030d14f15c28.js": "/nico-galin.github.io/precache-manifest.cb043be1df319dd5c112030d14f15c28.js",
+    "precache-manifest.4e5404c6a526f74fd07ae42b54ec6df2.js": "/nico-galin.github.io/precache-manifest.4e5404c6a526f74fd07ae42b54ec6df2.js",
     "service-worker.js": "/nico-galin.github.io/service-worker.js",
-    "static/css/main.84211073.chunk.css.map": "/nico-galin.github.io/static/css/main.84211073.chunk.css.map",
-    "static/js/2.3f2a2470.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.3f2a2470.chunk.js.LICENSE.txt",
+    "static/css/main.c441706d.chunk.css.map": "/nico-galin.github.io/static/css/main.c441706d.chunk.css.map",
+    "static/js/2.49916669.chunk.js.LICENSE.txt": "/nico-galin.github.io/static/js/2.49916669.chunk.js.LICENSE.txt",
     "static/media/aperture.png": "/nico-galin.github.io/static/media/aperture.b24351ea.png",
     "static/media/berry.png": "/nico-galin.github.io/static/media/berry.94abc9a5.png",
     "static/media/blaze.png": "/nico-galin.github.io/static/media/blaze.e93ddf1f.png",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8532362d.js",
-    "static/js/2.3f2a2470.chunk.js",
-    "static/css/main.84211073.chunk.css",
-    "static/js/main.ac678335.chunk.js"
+    "static/js/2.49916669.chunk.js",
+    "static/css/main.c441706d.chunk.css",
+    "static/js/main.bbe44198.chunk.js"
   ]
 }
