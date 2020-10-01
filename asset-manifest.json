@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.922bd52a.chunk.css",
+    "main.css": "/static/css/main.fec9b048.chunk.css",
     "main.js": "/static/js/main.b9056cc4.chunk.js",
     "main.js.map": "/static/js/main.b9056cc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bcba6674.js",
@@ -8,9 +8,9 @@
     "static/js/2.49916669.chunk.js": "/static/js/2.49916669.chunk.js",
     "static/js/2.49916669.chunk.js.map": "/static/js/2.49916669.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b1b3fe6abac64fe5589c2eb881465637.js": "/precache-manifest.b1b3fe6abac64fe5589c2eb881465637.js",
+    "precache-manifest.96db662de731bda567fc3d990a22f9c3.js": "/precache-manifest.96db662de731bda567fc3d990a22f9c3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.922bd52a.chunk.css.map": "/static/css/main.922bd52a.chunk.css.map",
+    "static/css/main.fec9b048.chunk.css.map": "/static/css/main.fec9b048.chunk.css.map",
     "static/js/2.49916669.chunk.js.LICENSE.txt": "/static/js/2.49916669.chunk.js.LICENSE.txt",
     "static/media/aperture.png": "/static/media/aperture.b24351ea.png",
     "static/media/berry.png": "/static/media/berry.94abc9a5.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.bcba6674.js",
     "static/js/2.49916669.chunk.js",
-    "static/css/main.922bd52a.chunk.css",
+    "static/css/main.fec9b048.chunk.css",
     "static/js/main.b9056cc4.chunk.js"
   ]
 }
