@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa95eb66.chunk.css",
-    "main.js": "/static/js/main.b9056cc4.chunk.js",
-    "main.js.map": "/static/js/main.b9056cc4.chunk.js.map",
+    "main.css": "/static/css/main.675bb550.chunk.css",
+    "main.js": "/static/js/main.6efcc5ed.chunk.js",
+    "main.js.map": "/static/js/main.6efcc5ed.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bcba6674.js",
     "runtime-main.js.map": "/static/js/runtime-main.bcba6674.js.map",
-    "static/js/2.49916669.chunk.js": "/static/js/2.49916669.chunk.js",
-    "static/js/2.49916669.chunk.js.map": "/static/js/2.49916669.chunk.js.map",
+    "static/js/2.5bdcb85e.chunk.js": "/static/js/2.5bdcb85e.chunk.js",
+    "static/js/2.5bdcb85e.chunk.js.map": "/static/js/2.5bdcb85e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fdf794f4c9a7ec278e13f195f9555be8.js": "/precache-manifest.fdf794f4c9a7ec278e13f195f9555be8.js",
+    "precache-manifest.75b88c80b83141526d10c2aab358353e.js": "/precache-manifest.75b88c80b83141526d10c2aab358353e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.aa95eb66.chunk.css.map": "/static/css/main.aa95eb66.chunk.css.map",
-    "static/js/2.49916669.chunk.js.LICENSE.txt": "/static/js/2.49916669.chunk.js.LICENSE.txt",
+    "static/css/main.675bb550.chunk.css.map": "/static/css/main.675bb550.chunk.css.map",
+    "static/js/2.5bdcb85e.chunk.js.LICENSE.txt": "/static/js/2.5bdcb85e.chunk.js.LICENSE.txt",
     "static/media/aperture.png": "/static/media/aperture.b24351ea.png",
     "static/media/berry.png": "/static/media/berry.94abc9a5.png",
     "static/media/blaze.png": "/static/media/blaze.e93ddf1f.png",
@@ -19,16 +19,19 @@
     "static/media/cubes.png": "/static/media/cubes.2b3feed7.png",
     "static/media/fox.png": "/static/media/fox.9c1eae97.png",
     "static/media/gem.png": "/static/media/gem.db79143c.png",
+    "static/media/insta_logo.png": "/static/media/insta_logo.9e22fee7.png",
     "static/media/jobylogo.png": "/static/media/jobylogo.f95c87a8.png",
+    "static/media/pcs_logo.png": "/static/media/pcs_logo.b61327fd.png",
     "static/media/pin.png": "/static/media/pin.d0b85aaf.png",
     "static/media/range.png": "/static/media/range.95d49cbc.png",
     "static/media/target.png": "/static/media/target.b973a341.png",
+    "static/media/ucberkeley_seal.png": "/static/media/ucberkeley_seal.5599ec65.png",
     "static/media/weight.png": "/static/media/weight.15705328.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bcba6674.js",
-    "static/js/2.49916669.chunk.js",
-    "static/css/main.aa95eb66.chunk.css",
-    "static/js/main.b9056cc4.chunk.js"
+    "static/js/2.5bdcb85e.chunk.js",
+    "static/css/main.675bb550.chunk.css",
+    "static/js/main.6efcc5ed.chunk.js"
   ]
 }
