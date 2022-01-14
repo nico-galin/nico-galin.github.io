@@ -55,12 +55,12 @@ const Portfolio = () => {
                 <Routes>
                     <Route path="/" element={
                         <div className={menuChoice === 0 ? styles.grid : styles.grid_hidden}>
-                            <HexGrid size={150} length={6} width={9} data={iconography_hexagons} start={[3, 2]} ref={gridRef} onClick={selectItem}/>
+                            <HexGrid size={150} length={6} width={9} data={iconography_hexagons} start={[3, 2]} ref={gridRef} delayFraction={3} onClick={selectItem}/>
                         </div>
                         } />
                     <Route path="/projects" element={
                         <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
-                            <HexGrid size={300} length={3} width={5} data={project_hexagons} start={[1, 2]} ref={gridRef} onClick={selectItem}/>
+                            <HexGrid size={300} length={3} width={5} data={project_hexagons} start={[1, 2]} ref={gridRef} delayFraction={1} onClick={selectItem}/>
                         </div>
                         } />
                 </Routes>
