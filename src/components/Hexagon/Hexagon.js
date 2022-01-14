@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Hexagon.module.scss';
 
-const Hexagon = ({ imgUrl, color, size }) => {
+const Hexagon = ({ imgUrl, color, size, animationDelay = 0 }) => {
     let colorClass = "";
     if (color === "dark") {
         colorClass = styles.hexagon_dark
@@ -9,7 +9,7 @@ const Hexagon = ({ imgUrl, color, size }) => {
         colorClass = styles.hexagon_colored
     }
     return (
-        <div className={`${styles.hexagon} ${colorClass}`} style={{width: `${size}px`, height: `${size}px`}}>
+        <div className={`${styles.hexagon} ${colorClass}`} style={{width: `${size}px`, height: `${size}px`, animationDelay: `${animationDelay}s`}}>
             {imgUrl &&
                 <img alt={"content"} src={imgUrl} width={size} height={size} />
             }

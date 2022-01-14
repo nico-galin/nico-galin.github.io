@@ -37,6 +37,13 @@
 .hexagon {
 	display: inline-block;
 	@include rounded-hex($rotated: true);
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1s;
+    animation: fadeIn ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .hexagon_dark {
@@ -54,3 +61,29 @@
 .hexagon_large {
     width: 300px; height: 300px;
 }
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+  

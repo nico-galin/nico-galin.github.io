@@ -34,7 +34,7 @@ const hexagons = [
     ["", "invisible"],
     ["", "dark"],
     ["", "invisible"],
-    ["", "invisible"],
+    ["/cubes.png", ""],
     ["", "invisible"],
 
     ["", "invisible"],
@@ -44,7 +44,7 @@ const hexagons = [
     ["", "invisible"],
     ["", "colored"],
     ["", "dark"],
-    ["", "invisible"],
+    ["fox.png", ""],
 ];
 
 export default hexagons;

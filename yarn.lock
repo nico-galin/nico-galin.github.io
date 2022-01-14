@@ -7734,6 +7734,11 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-use-draggable-scroll@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/react-use-draggable-scroll/-/react-use-draggable-scroll-0.2.3.tgz#012724ac8e151260c03a9b3f0c236708ed368ede"
+  integrity sha512-sHQFlRR4QMzY4sGEAWZO2hzYi9T5aJaGR36lkOg4zhEWl01ZMkL/a59ydJeo5dR9VX0yswgJIsDe15rXjnR93w==
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
