@@ -1,0 +1,56 @@
+@import '~compass-mixins/lib/compass/css3';
+@import '~mathsass/dist/math';
+
+@mixin rounded-hex($main-radius: 30%, $rounding-radius: 10%, $rotated: false, $precision: 20) {
+	$n: 6;
+	$central-angle: 360deg/$n;
+	$angle: ($n - 2)*180deg/$n;
+	$max-var-angle: 2*(90deg - $angle/2);
+	$precision: 6;
+	$unit-var-angle: $max-var-angle/$precision;
+	
+	$r-diff: $main-radius + $rounding-radius;
+
+	$points: ();
+
+	@for $i from 0 to $n {
+		$vertex-angle: $i*$central-angle +
+			if($rotated, -90deg, 0deg);
+		$vertex-x: 50% + $r-diff*cos($vertex-angle);
+		$vertex-y: 50% + $r-diff*sin($vertex-angle);
+
+		@for $j from 0 through $precision {
+			$curr-angle: $vertex-angle + 
+				($j - .5*$precision)*$unit-var-angle;
+			$x: $vertex-x + 
+				$rounding-radius*cos($curr-angle);
+			$y: $vertex-y + 
+				$rounding-radius*sin($curr-angle);
+
+			$points: $points, $x $y;
+		}
+	}
+	
+	clip-path: polygon($points);
+    
+}
+.hexagon {
+	display: inline-block;
+	@include rounded-hex($rotated: true);
+}
+
+.hexagon_dark {
+    background: #292929;
+}
+
+.hexagon_colored {
+    background: linear-gradient(90deg, #DA8E1C, #DA8E1C, #E4BC2F);
+}
+
+.hexagon_small {
+    width: 150px; height: 150px;
+}
+
+.hexagon_large {
+    width: 300px; height: 300px;
+}

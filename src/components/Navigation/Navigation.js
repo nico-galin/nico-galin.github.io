@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navigation.module.scss';
 
 const Navigation = () => {
     const location = useLocation().pathname
-    React.useEffect(() => {
+    useEffect(() => {
         // runs on location, i.e. route, change
     }, [location])
     let selbarClass = styles.selBar;
