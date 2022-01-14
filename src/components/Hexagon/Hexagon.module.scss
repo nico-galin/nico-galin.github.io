@@ -47,12 +47,33 @@
     box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
 }
 
-.hexagon:hover {
+.hexagon_large {
+	display: inline-block;
+	@include rounded-hex($rotated: true,  $rounding-radius: 3%);
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1s;
+    animation: fadeIn ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+}
+
+.hexagon_hover {
+    @extend .hexagon
+}
+
+.hexagon_hover:hover {
     transform: scale(1.02);
 }
 
 .hexagon_dark {
     background: #292929;
+}
+
+.hexagon_light {
+    background: white
 }
 
 .hexagon_colored {

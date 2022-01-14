@@ -1,0 +1,231 @@
+.fadeIn {
+    --anim-duration: 1s;
+    -webkit-animation: fadeIn ease-in var(--anim-duration);
+    animation: fadeIn ease-in var(--anim-duration);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: var(--anim-duration);
+    animation-duration: var(--anim-duration);
+}
+
+.expandIn {
+    --anim-duration: 1s;
+    -webkit-animation: expandIn ease-in var(--anim-duration);
+    animation: expandIn ease-in var(--anim-duration);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: var(--anim-duration);
+    animation-duration: var(--anim-duration);
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: 80px 100px 80px 80px;
+}
+
+.leftColumn {
+    @extend .fadeIn;
+    animation-delay: 0.4s;
+    flex: 1;
+    margin-right: -40px;
+    justify-content: left;
+    --margin-bottom: 30px;
+    opacity: 0;
+}
+
+.middleColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    position: relative;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.rightColumn {
+    @extend .fadeIn;
+    position: absolute;
+    top: 30px;
+    right: -90px;
+    animation-delay: 0.8s;
+    flex: 1;
+    justify-content: center;
+    opacity: 0;
+}
+
+.backBtn {
+    width: 100%;
+    padding: 8px 0 8px 0;
+    border-bottom: 2px solid #DB931E;
+    text-transform: uppercase;
+    margin-bottom: var(--margin-bottom);
+}
+
+.summary {
+    margin-left: 10px;
+}
+
+.titles {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: var(--margin-bottom);
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.subtitle {
+    font-size: larger;
+    color: #B8B8B8;
+}
+
+.title {
+    font-size:xx-large;
+}
+
+.description {
+    margin-bottom: 50px
+}
+
+.externalBtn {
+    padding: 8px 25px;
+    border: 2px solid #DB931E;
+    border-radius: 6px;
+    color: #DB931E;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:smaller;
+}
+
+.externalBtn:hover, .backBtn:hover {
+    cursor: pointer;
+}
+
+.hexagonTailIcon {
+    margin-left: -90px;
+}
+
+.hexagonTailProj {
+    margin-left: -200px;
+}
+
+.hexWrapper::before {
+    @extend .expandIn;
+    z-index: 0;
+    animation-delay: 1s;
+    content: "";
+    position: absolute;
+    transform: rotate(-50deg) translateY(-20px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.hexWrapper2::before {
+    @extend .expandIn;
+    z-index: 0;
+    animation-delay: 1s;
+    content: "";
+    position: absolute;
+    transform: rotate(-50deg) translateY(-35px) translateX(-40px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background-color: #959595;
+}
+
+.category {
+    display: flex;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    > :nth-child(1) {
+        flex: 1;
+        text-align: end;
+        margin-right: 20px;
+        color:#B8B8B8;
+    }
+
+    > :nth-child(2) {
+        flex: 1;
+        > p {
+            margin: 0 0 10px 0;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+@keyframes expandIn {
+    0% {width:0;}
+    100% {width:100%;}
+}
+  
+@-moz-keyframes expandIn {
+    0% {width:0;}
+    100% {width:100%;}
+}
+
+@-webkit-keyframes expandIn {
+    0% {width:0;}
+    100% {width:100%;}
+}
+
+@-o-keyframes expandIn {
+    0% {width:0;}
+    100% {width:100%;}
+}
+
+@-ms-keyframes expandIn {
+    0% {width:0;}
+    100% {width:100%;}
+}
+  

@@ -7,8 +7,9 @@ const Navigation = () => {
     useEffect(() => {
         // runs on location, i.e. route, change
     }, [location])
+    
     let selbarClass = styles.selBar;
-    if (location === "/portfolio") {
+    if (location === "/portfolio" || location === "/itemspotlight") {
         selbarClass = styles.selBar_tq;
     } else if (location === "/resume") {
         selbarClass = styles.selBar_half;
