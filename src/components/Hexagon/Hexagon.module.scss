@@ -44,6 +44,11 @@
     animation-fill-mode: forwards;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+}
+
+.hexagon:hover {
+    transform: scale(1.02);
 }
 
 .hexagon_dark {

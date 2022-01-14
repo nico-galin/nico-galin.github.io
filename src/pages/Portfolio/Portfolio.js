@@ -33,7 +33,7 @@ const Portfolio = () => {
             <div className={styles.vignette} />
             <div className={styles.scrollableArea} ref={ref} {...events}>
                 <div className={styles.gridPadding}>
-                    <HexGrid size={150} length={5} width={8} data={hexagons} start={[3, 2]} ref={gridRef} />
+                    <HexGrid size={150} length={6} width={9} data={hexagons} start={[3, 2]} ref={gridRef} />
                 </div>
             </div>
 

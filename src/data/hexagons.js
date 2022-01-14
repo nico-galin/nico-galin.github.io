@@ -9,6 +9,7 @@ const hexagons = [
     ["", "invisible"],
     ["", "invisible"],
     ["", "invisible"],
+    ["", "invisible"],
 
     ["", "dark"],
     ["/blaze.png", ""],
@@ -18,6 +19,7 @@ const hexagons = [
     ["/aperture.png", ""],
     ["", "dark"],
     ["", "colored"],
+    ["", "invisible"],
 
     ["", "dark"],
     ["", "colored"],
@@ -27,6 +29,7 @@ const hexagons = [
     ["/pin.png", ""],
     ["", "invisible"],
     ["", "invisible"],
+    ["", "invisible"],
     
     ["", "invisible"],
     ["/croissant.png", ""],
@@ -34,17 +37,29 @@ const hexagons = [
     ["", "invisible"],
     ["", "dark"],
     ["", "invisible"],
-    ["/cubes.png", ""],
+    ["/fox.png", ""],
+    ["", "invisible"],
     ["", "invisible"],
 
-    ["", "invisible"],
+    ["/target.png", ""],
     ["", "dark"],
     ["", "colored"],
     ["", "invisible"],
     ["", "invisible"],
     ["", "colored"],
     ["", "dark"],
-    ["fox.png", ""],
+    ["", "invisible"],
+    ["", "colored"],
+
+    ["", "invisible"],
+    ["", "invisible"],
+    ["", "colored"],
+    ["", "invisible"],
+    ["", "invisible"],
+    ["", "invisible"],
+    ["", "dark"],
+    ["/cubes.png", ""],
+    ["", "invisible"],
 ];
 
 export default hexagons;
