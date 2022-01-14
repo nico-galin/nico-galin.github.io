@@ -4,6 +4,7 @@ import HexGrid from '../../components/HexGrid/HexGrid';
 import { iconography_hexagons, project_hexagons } from '../../data/hexagons';
 import { useDraggable } from 'react-use-draggable-scroll';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { notBlank } from '../../utils';
 
 const Portfolio = () => {
     const navigate = useNavigate();
@@ -38,7 +39,7 @@ const Portfolio = () => {
     }
 
     const selectItem = (id) => {
-        if (id !== "null") {
+        if (!notBlank(id)) {
             navigate(`/itemspotlight?${id}`)
         }
     }
@@ -60,7 +61,7 @@ const Portfolio = () => {
                         } />
                     <Route path="/projects" element={
                         <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
-                            <HexGrid size={300} length={3} width={5} data={project_hexagons} start={[1, 2]} ref={gridRef} delayFraction={1} onClick={selectItem}/>
+                            <HexGrid size={300} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} ref={gridRef} delayFraction={2} onClick={selectItem}/>
                         </div>
                         } />
                 </Routes>

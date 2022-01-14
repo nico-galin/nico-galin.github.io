@@ -44,6 +44,7 @@
     justify-content: left;
     --margin-bottom: 30px;
     opacity: 0;
+    max-width: 500px;
 }
 
 .middleColumn {
@@ -94,7 +95,7 @@
 
 .subtitle {
     font-size: larger;
-    color: #B8B8B8;
+    color: #A7A7A7;
 }
 
 .title {
@@ -178,21 +179,19 @@
 }
 
 .category {
-    display: flex;
     margin-bottom: 15px;
     text-transform: uppercase;
-    > :nth-child(1) {
-        flex: 1;
-        text-align: end;
-        margin-right: 20px;
-        color:#B8B8B8;
-    }
-
-    > :nth-child(2) {
-        flex: 1;
-        > p {
-            margin: 0 0 10px 0;
+    > * {
+        margin: none;
+        vertical-align: top;
+        > * {
+            margin: none;
         }
+    }
+    > :nth-child(1) {
+        color:#A7A7A7;
+        text-align: end;
+        padding-right: 15px;
     }
 }
 

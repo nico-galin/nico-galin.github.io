@@ -4,6 +4,7 @@ import styles from './ItemSpotlight.module.scss';
 import portfolio from '../../data/portfolio';
 import Hexagon from '../../components/Hexagon/Hexagon';
 import HexGrid from '../../components/HexGrid/HexGrid';
+import { notBlank } from '../../utils';
 
 const itemTailGrid = [
     ["null","", "light"],
@@ -38,7 +39,8 @@ const ItemSpotlight = () => {
     }, [location, data])
 
     const goBack = () => {
-        navigate(`/portfolio`);
+        navigate(-1, { replace: true });
+        if (data != null && data.type === "project") navigate(-1, { replace: true });
     }
 
     return (
@@ -56,8 +58,10 @@ const ItemSpotlight = () => {
                                     <p className={styles.title}>{data.title}</p>
                                 </div>
                                 <p className={styles.description}>{data.description}</p>
-                                <a href={data.externalUrl} target="_blank" className={styles.externalBtn} rel="noreferrer">View on {data.externalSiteName}</a>
-                            </div>
+                                {notBlank(data.externalUrl) && notBlank(data.externalSiteName) &&
+                                    <a href={data.externalUrl} target="_blank" className={styles.externalBtn} rel="noreferrer">View on {data.externalSiteName}</a>
+                                }
+                                </div>
                         </div>
                         <div className={styles.middleColumn}>
                             <div className={styles.hexWrapper}>
@@ -77,18 +81,20 @@ const ItemSpotlight = () => {
                         </div>
                         {data.type === "project" &&
                             <div className={styles.rightColumn} style={data.type === "icon" ? {display: "none"} : {display: "block"}}>
+                                <table>
                                 {Object.keys(data.categories).map((cat) => (
-                                    <div className={styles.category}>
-                                        <div>
-                                            {cat}
-                                        </div>
-                                        <div>
+                                    <tr className={styles.category}>
+                                        <td>
+                                            <p>{cat}</p>
+                                        </td>
+                                        <td>
                                             {data.categories[cat].map((item) => (
                                                 <p>{item}</p>
                                             ))}
-                                        </div>
-                                    </div>
+                                        </td>
+                                    </tr>
                                 ))}
+                                </table>
                             </div>
                         }
                     </>

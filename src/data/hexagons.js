@@ -79,7 +79,7 @@ const project_hexagons = [
     ["","", "dark"],
     ["","", "colored"],
     ["","", "dark"],
-    ["","", "colored"],
+    ["numc_project","", "colored"],
 ]
 
 export { iconography_hexagons, project_hexagons }
