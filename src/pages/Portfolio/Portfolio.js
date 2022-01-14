@@ -23,10 +23,6 @@ const Portfolio = () => {
         }
     }, []);
 
-    const toggleMenuChoice = () => {
-        setMenuChoice(cur => cur === 0 ? 1 : 0)
-    }
-
     const selectItem = (id) => {
         if (id !== "null") {
             navigate(`/itemspotlight?${id}`)
@@ -36,8 +32,8 @@ const Portfolio = () => {
     return (
         <div className={styles.container}>
             <div className={styles.menu}>
-                <button className={iconography_class} onClick={toggleMenuChoice}>Iconography</button>
-                <button href="#" className={proj_class} onClick={toggleMenuChoice}>Projects</button>
+                <button className={iconography_class} onClick={() => setMenuChoice(0)}>Iconography</button>
+                <button href="#" className={proj_class} onClick={() => setMenuChoice(1)}>Projects</button>
             </div>
             <div className={styles.vignette} />
             <div className={styles.scrollableArea} ref={ref} {...events}>
