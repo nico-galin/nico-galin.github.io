@@ -58,4 +58,15 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    transition: all 0.8s ease-in-out;
+}
+
+.grid {
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+
+.grid_hidden {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
 }

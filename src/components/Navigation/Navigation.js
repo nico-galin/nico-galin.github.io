@@ -4,16 +4,17 @@ import styles from './Navigation.module.scss';
 
 const Navigation = () => {
     const location = useLocation().pathname
+    const topTab = location.split("/")[1]
     useEffect(() => {
         // runs on location, i.e. route, change
     }, [location])
     
     let selbarClass = styles.selBar;
-    if (location === "/portfolio" || location === "/itemspotlight") {
+    if (topTab === "portfolio" || topTab === "itemspotlight") {
         selbarClass = styles.selBar_tq;
-    } else if (location === "/resume") {
+    } else if (topTab === "resume") {
         selbarClass = styles.selBar_half;
-    } else if (location === "/contact") {
+    } else if (topTab === "contact") {
         selbarClass = styles.selBar_quarter;
     }
     return (
@@ -30,7 +31,7 @@ const Navigation = () => {
                     <Link to="/" className={styles.link}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/portfolio" className={styles.link}>Portfolio</Link>
+                    <Link to={topTab === "portfolio" ? location : "/portfolio"} className={styles.link}>Portfolio</Link>
                 </li>
                 <li>
                     <Link to="/resume" className={styles.link}>Resume</Link>

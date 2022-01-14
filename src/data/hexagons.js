@@ -1,6 +1,6 @@
 /* Formatting: (itemId, imageUrl, color=invisible|dark|colored) */
 
-const hexagons = [
+const iconography_hexagons = [
     ["null", "", "invisible"],
     ["null","", "invisible"],
     ["null","", "dark"],
@@ -62,4 +62,24 @@ const hexagons = [
     ["null", "", "invisible"],
 ];
 
-export default hexagons;
+const project_hexagons = [
+    ["slate_project","", "colored"],
+    ["crypto_mining_project","", "colored"],
+    ["","", "colored"],
+    ["sentiment_analysis_project","", "colored"],
+    ["","", "colored"],
+
+    ["","", "dark"],
+    ["lyftable_project","", "colored"],
+    ["niqbot_project","", "colored"],
+    ["","", "dark"],
+    ["","", "invisible"],
+
+    ["","", "invisible"],
+    ["","", "dark"],
+    ["","", "colored"],
+    ["","", "dark"],
+    ["","", "colored"],
+]
+
+export { iconography_hexagons, project_hexagons }
