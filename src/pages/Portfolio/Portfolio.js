@@ -2,7 +2,6 @@ import styles from './Portfolio.module.scss';
 import React, { useEffect, useRef, useState } from 'react';
 import HexGrid from '../../components/HexGrid/HexGrid';
 import hexagons from '../../data/hexagons';
-import ScrollDrag from '../../components/ScrollDrag/ScrollDrag';
 import { useDraggable } from 'react-use-draggable-scroll';
 
 const Portfolio = () => {
