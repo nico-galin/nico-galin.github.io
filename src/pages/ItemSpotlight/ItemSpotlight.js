@@ -48,7 +48,7 @@ const ItemSpotlight = () => {
                     <>
                         <div className={styles.leftColumn}>
                             <div className={styles.backBtn} onClick={goBack}>
-                                <span>Back</span>
+                                <div>Back</div>
                             </div>
                             <div className={styles.summary}>
                                 <div className={styles.titles}>
