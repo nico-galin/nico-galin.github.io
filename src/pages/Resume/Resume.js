@@ -1,8 +1,11 @@
 import styles from './Resume.module.scss';
 import React from 'react';
 import { notBlank } from '../../utils';
+import { saveAs } from 'file-saver';
+import resume_file from '../../data/resume.pdf';
 import resume from '../../data/resume';
 import ResumeSection from '../../components/ResumeSection/ResumeSection';
+import Hexagon from '../../components/Hexagon/Hexagon';
 
 let experienceRaw = {};
 resume.experience.forEach((exp, ind) => {
@@ -74,7 +77,7 @@ const Resume = () => {
                     </div>
                 </div> 
                 <div>
-                    <div className={styles.category} style={{animationDelay: "0.5s"}}>
+                    <div className={styles.category} style={{animationDelay: "0.3s"}}>
                         <div className={styles.categoryName}><p>Education</p></div>
                         <div className={styles.categoryContent}>
                             {resume.education.map((data => (
@@ -82,7 +85,7 @@ const Resume = () => {
                             )))}
                         </div>
                     </div>
-                    <div className={styles.category} style={{animationDelay: "1s"}}>
+                    <div className={styles.category} style={{animationDelay: "0.6s"}}>
                         <div className={styles.categoryName}><p>Projects</p></div>
                         <div className={styles.categoryContent}>
                             {resume.projects.map((data => (
@@ -90,7 +93,7 @@ const Resume = () => {
                             )))}
                         </div>
                     </div> 
-                    <div className={styles.category} style={{animationDelay: "1.5s"}}>
+                    <div className={styles.category} style={{animationDelay: "0.9s"}}>
                         <div className={styles.categoryName}><p>Skills</p></div>
                         <div className={styles.categoryContent}>
                             {Object.keys(resume.skills).map((key => (
@@ -98,13 +101,16 @@ const Resume = () => {
                             )))}
                         </div>
                     </div>
-                    <div className={styles.category} style={{animationDelay: "2s"}}>
+                    <div className={styles.category} style={{animationDelay: "1.2s"}}>
                         <div className={styles.categoryName}><p>Volunteer</p></div>
                         <div className={styles.categoryContent}>
                             {resume.volunteer.map((data => (
                                 <ResumeSection title={data.title} subtitle={`${data.company} / ${data.start} - ${data.end}${notBlank(data.paren) ? " (" + data.paren + ")" : null}`} descriptions={[data.description]}/>
                             )))}
                         </div>
+                    </div>
+                    <div className={styles.footer} style={{animationDelay: "1.5s"}}>
+                        <Hexagon size={180} color={"colored"} imgUrl={"/download-icon.png"} onClick={() => saveAs(resume_file, "nicholas_galin_resume.pdf")}/>
                     </div>
                 </div>
             </div>

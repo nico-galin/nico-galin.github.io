@@ -8,6 +8,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "compass-mixins": "^0.12.10",
+    "file-saver": "^2.0.5",
     "gh-pages": "^3.2.3",
     "mathsass": "^0.11.0",
     "node-sass": "^7.0.1",
