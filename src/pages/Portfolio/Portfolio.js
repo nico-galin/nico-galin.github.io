@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import HexGrid from '../../components/HexGrid/HexGrid';
 import { iconography_hexagons, project_hexagons } from '../../data/hexagons';
 import { useDraggable } from 'react-use-draggable-scroll';
-import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { notBlank } from '../../utils';
 
 const Portfolio = () => {
