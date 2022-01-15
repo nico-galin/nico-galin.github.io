@@ -1,0 +1,35 @@
+.container {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: smaller
+}
+
+.title_multi {
+    @extend .title;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #DB931E;
+    text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.description {
+    font-size: small;
+    color:#bdbdbd
+}
+
+.nested {
+    border-left: 2px solid#DB931E;
+    padding-left: 15px;
+    margin-left: 2px;
+}
