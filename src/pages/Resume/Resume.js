@@ -74,7 +74,7 @@ const Resume = () => {
                     </div>
                 </div> 
                 <div>
-                    <div className={styles.category}>
+                    <div className={styles.category} style={{animationDelay: "0.5s"}}>
                         <div className={styles.categoryName}><p>Education</p></div>
                         <div className={styles.categoryContent}>
                             {resume.education.map((data => (
@@ -82,7 +82,7 @@ const Resume = () => {
                             )))}
                         </div>
                     </div>
-                    <div className={styles.category}>
+                    <div className={styles.category} style={{animationDelay: "1s"}}>
                         <div className={styles.categoryName}><p>Projects</p></div>
                         <div className={styles.categoryContent}>
                             {resume.projects.map((data => (
@@ -90,7 +90,7 @@ const Resume = () => {
                             )))}
                         </div>
                     </div> 
-                    <div className={styles.category}>
+                    <div className={styles.category} style={{animationDelay: "1.5s"}}>
                         <div className={styles.categoryName}><p>Skills</p></div>
                         <div className={styles.categoryContent}>
                             {Object.keys(resume.skills).map((key => (
@@ -98,7 +98,7 @@ const Resume = () => {
                             )))}
                         </div>
                     </div>
-                    <div className={styles.category}>
+                    <div className={styles.category} style={{animationDelay: "2s"}}>
                         <div className={styles.categoryName}><p>Volunteer</p></div>
                         <div className={styles.categoryContent}>
                             {resume.volunteer.map((data => (

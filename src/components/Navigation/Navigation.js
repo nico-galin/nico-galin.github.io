@@ -18,29 +18,32 @@ const Navigation = () => {
         selbarClass = styles.selBar_quarter;
     }
     return (
-        <nav>
-            <div className={styles.leftNavigation}>
-                <div className={styles.leftBlock} />
-                <li>
-                    <Link to="/" className={styles.link}>Nico Galin</Link>
-                </li>
-            </div>
-            <ul className={styles.navigation}>
-                <div className={selbarClass} />
-                <li>
-                    <Link to="/" className={styles.link}>Home</Link>
-                </li>
-                <li>
-                    <Link to={topTab === "portfolio" ? location : "/portfolio"} className={styles.link}>Portfolio</Link>
-                </li>
-                <li>
-                    <Link to="/resume" className={styles.link}>Resume</Link>
-                </li>
-                <li>
-                    <Link to="/contact" className={styles.link}>Contact</Link>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <div className={styles.dummyNav} />
+            <nav>
+                <div className={styles.leftNavigation}>
+                    <div className={styles.leftBlock} />
+                    <li>
+                        <Link to="/" className={styles.link}>Nico Galin</Link>
+                    </li>
+                </div>
+                <ul className={styles.navigation}>
+                    <div className={selbarClass} />
+                    <li>
+                        <Link to="/" className={styles.link}>Home</Link>
+                    </li>
+                    <li>
+                        <Link to={topTab === "portfolio" ? location : "/portfolio"} className={styles.link}>Portfolio</Link>
+                    </li>
+                    <li>
+                        <Link to="/resume" className={styles.link}>Resume</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact" className={styles.link}>Contact</Link>
+                    </li>
+                </ul>
+            </nav>
+        </>
     );
   }
   

@@ -1,10 +1,22 @@
 nav {
-    margin-top: 25px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
-    height: fit-content;
+    background-color: #1c1c1c;
+    height: 65px;
+}
+
+.dummyNav {
+    height: 65px;
+    width: 100%;
+    pointer-events: none;
 }
 
 .leftNavigation {

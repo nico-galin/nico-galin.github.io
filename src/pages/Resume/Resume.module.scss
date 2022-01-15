@@ -1,18 +1,29 @@
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1s;
+    animation: fadeIn ease-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
 .wrapper {
     justify-content: center;
-    background-color: red;
 }
 .container {
     display: flex;
     flex-direction: row;
     max-width: 1500px;
-    margin: auto;
-    padding: 50px 100px;
+    margin: 80px auto;
+    padding: 50px 5vw;
 }
 .category {
+    @extend .fadeIn;
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
+    margin-right: 40px;
 }
 
 .categoryName {
@@ -21,7 +32,7 @@
     padding-right: 25px;
     text-align: right;
     color: #DB931E;
-    font-size: x-large;
+    font-size: large;
     > * {
         margin: 0;
     }
@@ -31,4 +42,58 @@
     flex: 3;
     border-left: 2px solid #DB931E;
     padding-left: 25px;
+    max-width: 30vw;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@media only screen and (max-width: 1300px) {
+    .categoryName {
+        padding-right: 10px;
+    }
+    .categoryContent {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .container {
+        flex-direction: column;
+    }
+    .category{
+        text-align: left;
+        flex-direction: column;
+    }
+    .categoryName {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .categoryContent {
+        max-width: none;
+    }
+    
 }

@@ -12,13 +12,15 @@ const App = () => {
         <div className="app">
             <HashRouter>
                 <Navigation />
-                <Routes>
-                    <Route exact path="/" element={<Home />} onChange/>
-                    <Route path="/portfolio/*" element={<Portfolio />} />
-                    <Route path="/itemspotlight" element={<ItemSpotlight />} />
-                    <Route path="/resume" element={<Resume />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
+                <div className="appContent">
+                    <Routes>
+                        <Route exact path="/" element={<Home />} onChange/>
+                        <Route path="/portfolio/*" element={<Portfolio />} />
+                        <Route path="/itemspotlight" element={<ItemSpotlight />} />
+                        <Route path="/resume" element={<Resume />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </div>
             </HashRouter>
         </div>
     );

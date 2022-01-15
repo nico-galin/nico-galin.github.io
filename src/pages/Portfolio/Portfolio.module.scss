@@ -1,8 +1,8 @@
 .container {
     position: relative;
-    height: 100%;
+    height: calc(100vh - 48px);
     width: 100%;
-    overflow: none;
+    overflow: hidden;
 }
 
 .vignette {
@@ -19,7 +19,7 @@
     z-index: 2;
     left: 0;
     right: 0;
-    bottom: 100px;
+    bottom: 65px;
     margin: auto;
     background-color: #292929;
     width:fit-content;
@@ -47,8 +47,8 @@
 }
 
 .scrollableArea {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow: scroll;
 }
 
