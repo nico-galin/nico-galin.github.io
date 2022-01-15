@@ -5,7 +5,7 @@ const euclideanDist = (p1, p2) => {
 const notBlank = (val) => {
     if (val == null) return false;
     if (val === {}) return false;
-    if (typeof val == "string" && (val === "" || val.trim() === "")) return false
+    if (typeof val == "string" && (val === "" || val.trim() === "" || val === "null")) return false
     return true;
 }
 

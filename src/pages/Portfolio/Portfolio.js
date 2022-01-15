@@ -39,7 +39,7 @@ const Portfolio = () => {
     }
 
     const selectItem = (id) => {
-        if (!notBlank(id)) {
+        if (notBlank(id)) {
             navigate(`/itemspotlight?${id}`)
         }
     }

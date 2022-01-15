@@ -2,13 +2,112 @@
 
 const portfolio = {
     "berry_icon": {
-        "title": "Strawberry",
+        "title": "Berry",
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "It's a strawberry, what more could you possibly want to know?",
         "imageUrl": "/berry.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDEviw-g14Q/"
+    },
+    "aperture_icon": {
+        "title": "Aperture",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "Lenses are quite beautiful, aren't they?",
+        "imageUrl": "/aperture.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDHThjdgcXP/"
+    },
+    "croissant_icon": {
+        "title": "Croissant",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "Bonjour.",
+        "imageUrl": "/croissant.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDJ28KCAjFC/"
+    },
+    "blaze_icon": {
+        "title": "Blaze",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "This icon makes me want to light a fire under your...browser...cough cough.",
+        "imageUrl": "/blaze.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDUd8bygkiF/"
+    },
+    "cubes_icon": {
+        "title": "Cubes",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "Recursion is universally one of the most satisfying and most frustrating things.",
+        "imageUrl": "/cubes.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDSSl5eA0UZ/"
+    },
+    "fox_icon": {
+        "title": "Fox",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "I'd like to think the fox is my spirit animal, but I'm not sure my reaction time is good enough. Back to playing Valorant I guess.",
+        "imageUrl": "/fox.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDUd-nnAW9C/"
+    },
+    "gem_icon": {
+        "title": "Gem",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "This site. Let me know if you have any suggestions.",
+        "imageUrl": "/gem.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDC6P9sAKwp/"
+    },
+    "pin_icon": {
+        "title": "Pin",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "Where are we gonna be? Santa Cruz? Berkeley? The meaningless void of existence?",
+        "imageUrl": "/pin.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDHTko4gkMw/"
+    },
+    "range_icon": {
+        "title": "Range",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "One of my favorites, New Jersey could never.",
+        "imageUrl": "/range.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CC94KaIgzpM/"
+    },
+    "screens_icon": {
+        "title": "Screens",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "The love of my life...unintentionally.",
+        "imageUrl": "/screens.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDEvbpUAKsd/"
+    },
+    "target_icon": {
+        "title": "Target",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "X marks the spot. Or...wait...fuck...",
+        "imageUrl": "/target.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDPXk1_Aw6p/"
+    },
+    "weight_icon": {
+        "title": "Weight",
+        "type": "icon",
+        "subtitle": "noir.graphics",
+        "description": "The perpetual nature of getting huge, no size will ever be enough and it DOES matter.",
+        "imageUrl": "/weight.png",
+        "externalSiteName": "Instagram",
+        "externalUrl": "https://www.instagram.com/p/CDCqOKGAUCg/"
     },
     "lyftable_project": {
         "title": "Lyftable",
