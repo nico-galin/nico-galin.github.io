@@ -12,9 +12,9 @@ const Hexagon = ({ style, nohover, large, imgUrl, color, size, inlineData, anima
     }
     return (
         <div onClick={() => onClick()} className={`${nohover ? styles.hexagon : styles.hexagon_hover} ${large ? styles.hexagon_large : null} ${colorClass}`}
-            style={{width: `${size}px`, height: `${size}px`, animationDelay: `${animationDelay}s`, ...style}}>
+            style={{width: `${size}px`, height: `${size}px`, animationDelay: `${animationDelay}s`, ...style, objectFit: 'cover'}}>
             {imgUrl &&
-                <img alt={"content"} src={imgUrl} width={size} height={size} />
+                <img alt={"content"} src={imgUrl} width={size} height={size}/>
             }
             {notBlank(inlineData) &&
                  <div onClick={() => onClick()} className={`${styles.hexagon} ${styles.hexagon_dark} ${styles.hexagon_inner}`}
