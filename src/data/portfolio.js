@@ -206,7 +206,7 @@ const portfolio = {
         "title": "Personal Site",
         "type": "project",
         "subtitle": "Personal Project",
-        "description": "This website, alongside many previous iterations over the past several years.",
+        "description": "This website, alongside many previous iterations over the past several years, that are fully customized and manually animated for a seamless experience.",
         "description_short": "This website.",
         "imageUrl": "/code-icon.png",
         "externalSiteName": "Github",
