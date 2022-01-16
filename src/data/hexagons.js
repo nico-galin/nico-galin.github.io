@@ -82,4 +82,24 @@ const project_hexagons = [
     ["numc_project","", "colored"],
 ]
 
-export { iconography_hexagons, project_hexagons }
+const contact_hexagons = [
+    ["null", "", "invisible"],
+    ["linkedin", "/linkedin-logo.png", "colored"],
+    ["instagram", "/instagram-logo.png", "colored"],
+    ["handshake", "/handshake-logo.png", "colored"],
+    ["null", "", "invisible"],
+
+    ["null", "", "dark"],
+    ["null", "/profile-photo.jpg", "dark"],
+    ["email", "/mail-icon.png", "colored"],
+    ["null", "", "dark"],
+    ["null", "", "invisible"],
+
+    ["null", "", "invisible"],
+    ["null", "", "dark"],
+    ["null", "", "colored"],
+    ["null", "", "dark"],
+    ["null", "", "colored"],
+]
+
+export { iconography_hexagons, project_hexagons, contact_hexagons }

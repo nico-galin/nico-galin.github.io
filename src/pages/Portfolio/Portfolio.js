@@ -10,7 +10,6 @@ const Portfolio = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const ref = useRef();
-    const gridRef = useRef();
     const { events } = useDraggable(ref, 0.8);
     const [menuChoice, setMenuChoice] = useState()
     let [iconography_class, proj_class] = [null, null]
@@ -52,22 +51,21 @@ const Portfolio = () => {
             </div>
             <div className={styles.vignette} />
             <div className={styles.scrollableArea} ref={ref} {...events}>
-            <div className={styles.gridPadding}>
-                <Routes>
-                    <Route path="/" element={
-                        <div className={menuChoice === 0 ? styles.grid : styles.grid_hidden}>
-                            <HexGrid size={150} length={6} width={9} data={iconography_hexagons} start={[3, 2]} ref={gridRef} delayFraction={3} onClick={selectItem}/>
-                        </div>
-                        } />
-                    <Route path="/projects" element={
-                        <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
-                            <HexGrid size={300} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} ref={gridRef} delayFraction={2} onClick={selectItem}/>
-                        </div>
-                        } />
-                </Routes>
+                <div className={styles.gridPadding}>
+                    <Routes>
+                        <Route path="/" element={
+                            <div className={menuChoice === 0 ? styles.grid : styles.grid_hidden}>
+                                <HexGrid size={150} length={6} width={9} data={iconography_hexagons} start={[3, 2]} delayFraction={3} onClick={selectItem}/>
+                            </div>
+                            } />
+                        <Route path="/projects" element={
+                            <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
+                                <HexGrid size={300} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} delayFraction={2} onClick={selectItem}/>
+                            </div>
+                            } />
+                    </Routes>
+                </div>
             </div>
-            </div>
-
         </div>
     );
 }

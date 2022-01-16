@@ -6,7 +6,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "It's a strawberry, what more could you possibly want to know?",
-        "imageUrl": "/berry.png",
+        "imageUrl": "/portfolio/berry.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDEviw-g14Q/"
     },
@@ -15,7 +15,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "Lenses are quite beautiful, aren't they?",
-        "imageUrl": "/aperture.png",
+        "imageUrl": "/portfolio/aperture.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDHThjdgcXP/"
     },
@@ -24,7 +24,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "Bonjour.",
-        "imageUrl": "/croissant.png",
+        "imageUrl": "/portfolio/croissant.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDJ28KCAjFC/"
     },
@@ -33,7 +33,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "This icon makes me want to light a fire under your...browser...cough cough.",
-        "imageUrl": "/blaze.png",
+        "imageUrl": "/portfolio/blaze.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDUd8bygkiF/"
     },
@@ -42,7 +42,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "Recursion is universally one of the most satisfying and most frustrating things.",
-        "imageUrl": "/cubes.png",
+        "imageUrl": "/portfolio/cubes.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDSSl5eA0UZ/"
     },
@@ -51,7 +51,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "I'd like to think the fox is my spirit animal, but I'm not sure my reaction time is good enough. Back to playing Valorant I guess.",
-        "imageUrl": "/fox.png",
+        "imageUrl": "/portfolio/fox.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDUd-nnAW9C/"
     },
@@ -60,7 +60,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "This site. Let me know if you have any suggestions.",
-        "imageUrl": "/gem.png",
+        "imageUrl": "/portfolio/gem.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDC6P9sAKwp/"
     },
@@ -69,7 +69,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "Where are we gonna be? Santa Cruz? Berkeley? The meaningless void of existence?",
-        "imageUrl": "/pin.png",
+        "imageUrl": "/portfolio/pin.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CDHTko4gkMw/"
     },
@@ -78,7 +78,7 @@ const portfolio = {
         "type": "icon",
         "subtitle": "noir.graphics",
         "description": "One of my favorites, New Jersey could never.",
-        "imageUrl": "/range.png",
+        "imageUrl": "range.png",
         "externalSiteName": "Instagram",
         "externalUrl": "https://www.instagram.com/p/CC94KaIgzpM/"
     },
