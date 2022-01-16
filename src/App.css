@@ -7,7 +7,7 @@
   width: 100vw;
   background-color: #1c1c1c;
   color: white;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 .appContent {
@@ -15,7 +15,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
