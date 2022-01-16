@@ -33,7 +33,7 @@
     margin: auto;
     flex-direction: row;
     justify-content: stretch;
-    margin: 80px 100px 80px 80px;
+    margin: 120px 80px;
 }
 
 .leftColumn {
@@ -201,25 +201,24 @@
   }
   
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
-
 
 @keyframes expandIn {
     0% {width:0;}
