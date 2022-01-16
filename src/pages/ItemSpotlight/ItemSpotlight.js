@@ -67,7 +67,7 @@ const ItemSpotlight = () => {
                         <div className={styles.middleColumn}>
                             <div className={styles.hexWrapper}>
                                 <div className={styles.hexWrapper2}>
-                                <Hexagon size={520} imgUrl={data.imageUrl} color={data.type === "project" ? "colored" : "dark"} nohover/>
+                                <Hexagon size={520} imgUrl={data.imageUrl} color={data.type === "project" ? "colored" : "dark"} nohover large/>
                                 </div>
                             </div>
                             {data.type === "icon" ?

@@ -1,7 +1,7 @@
 import styles from './Hexagon.module.scss';
 import { notBlank } from '../../utils';
 
-const Hexagon = ({ style, nohover, imgUrl, color, size, inlineData, animationDelay = 0, onClick = () => {} }) => {
+const Hexagon = ({ style, nohover, large, imgUrl, color, size, inlineData, animationDelay = 0, onClick = () => {} }) => {
     let colorClass = "";
     if (color === "light") {
         colorClass = styles.hexagon_light
@@ -11,7 +11,7 @@ const Hexagon = ({ style, nohover, imgUrl, color, size, inlineData, animationDel
         colorClass = styles.hexagon_colored
     }
     return (
-        <div onClick={() => onClick()} className={`${nohover ? styles.hexagon_large : styles.hexagon_hover} ${colorClass}`}
+        <div onClick={() => onClick()} className={`${nohover ? styles.hexagon : styles.hexagon_hover} ${large ? styles.hexagon_large : null} ${colorClass}`}
             style={{width: `${size}px`, height: `${size}px`, animationDelay: `${animationDelay}s`, ...style}}>
             {imgUrl &&
                 <img alt={"content"} src={imgUrl} width={size} height={size} />

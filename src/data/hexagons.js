@@ -76,7 +76,7 @@ const project_hexagons = [
     ["","", "invisible"],
 
     ["","", "invisible"],
-    ["","", "dark"],
+    ["personal_site_project","", "colored"],
     ["","", "colored"],
     ["","", "dark"],
     ["numc_project","", "colored"],

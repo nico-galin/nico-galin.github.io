@@ -30,10 +30,9 @@
 			$points: $points, $x $y;
 		}
 	}
-	
 	clip-path: polygon($points);
-    
 }
+
 .hexagon {
 	position: relative;
 	display: inline-block;
@@ -66,7 +65,7 @@
 }
 
 .hexagon_hover:hover {
-    transform: scale(1.02);
+    transform: scale(1.03);
 	cursor: pointer;
 }
 

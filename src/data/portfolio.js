@@ -202,6 +202,21 @@ const portfolio = {
         },
         "timestamp": "2020"
     },
+    "personal_site_project": {
+        "title": "Personal Site",
+        "type": "project",
+        "subtitle": "Personal Project",
+        "description": "This website, alongside many previous iterations over the past several years.",
+        "description_short": "This website.",
+        "imageUrl": "/code-icon.png",
+        "externalSiteName": "Github",
+        "externalUrl": "https://github.com/nico-galin/nico-galin.github.io",
+        "categories": {
+            "languages": ["Javascript", "HTML", "SCSS"],
+            "frameworks": ["React", "JSX"],
+        },
+        "timestamp": "2022"
+    },
 }
 
 export default portfolio;

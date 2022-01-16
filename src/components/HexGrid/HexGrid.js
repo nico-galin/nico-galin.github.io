@@ -22,6 +22,7 @@ const HexGrid = ({ size, length, width, resize = false, start=[0, 0], onClick = 
                                 }
                             : null}
                             size={size}
+                            nohover={!notBlank(hex[0])}
                             animationDelay={euclideanDist([hexInd, rowInd], start)/delayFraction} />
                     ))}
                 </div>
