@@ -1,14 +1,29 @@
-import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Navigation.module.scss';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
+import MenuIcon from '../MenuIcon/MenuIcon';
 
 const Navigation = () => {
-    const location = useLocation().pathname
-    const topTab = location.split("/")[1]
+    const navigate = useNavigate();
+    const { width } = useWindowDimensions();
+    const location = useLocation().pathname;
+    const topTab = location.split("/")[1];
+    const [fullscreenNavOpen, setFullscreenNavOpen] = useState(false);
+
     useEffect(() => {
         // runs on location, i.e. route, change
     }, [location])
     
+    const toggleFullscreenNav = () => {
+        setFullscreenNavOpen(prev => !prev);
+    }
+
+    const goTo = (url) => {
+        navigate(url);
+        if (fullscreenNavOpen) toggleFullscreenNav();
+    }
+
     let selbarClass = styles.selBar;
     if (topTab === "portfolio" || topTab === "itemspotlight") {
         selbarClass = styles.selBar_tq;
@@ -27,22 +42,27 @@ const Navigation = () => {
                         <Link to="/" className={styles.link}>Nico Galin</Link>
                     </li>
                 </div>
-                <ul className={styles.navigation}>
-                    <div className={selbarClass} />
+                <ul className={styles.navigation} style={width > 850 ? { display: "none" }: null}>
                     <li>
-                        <Link to="/" className={styles.link}>Home</Link>
-                    </li>
-                    <li>
-                        <Link to={topTab === "portfolio" ? location : "/portfolio"} className={styles.link}>Portfolio</Link>
-                    </li>
-                    <li>
-                        <Link to="/resume" className={styles.link}>Resume</Link>
-                    </li>
-                    <li>
-                        <Link to="/contact" className={styles.link}>Contact</Link>
+                        <MenuIcon onClick={toggleFullscreenNav} checked={fullscreenNavOpen}/>
                     </li>
                 </ul>
+                <ul className={styles.navigation} style={width <= 850 ? { display: "none" }: null}>
+                    <div className={selbarClass} />
+                    <li className={styles.link} onClick={() => goTo("/")}>Home</li>
+                    <li className={styles.link} onClick={() => goTo(topTab === "portfolio" ? location : "/portfolio")}>Portfolio</li>
+                    <li className={styles.link} onClick={() => goTo("/resume")}>Resume</li>
+                    <li className={styles.link} onClick={() => goTo("/contact")}>Contact</li>
+                </ul>
             </nav>
+            <div className={`${styles.fullpageNav_container} ${!fullscreenNavOpen ? styles.fullpageNav_hidden : null}`}>
+                <ul className={styles.fullpageNav}>
+                    <li className={styles.link} onClick={() => goTo("/")}>Home</li>
+                    <li className={styles.link} onClick={() => goTo(topTab === "portfolio" ? location : "/portfolio")}>Portfolio</li>
+                    <li className={styles.link} onClick={() => goTo("/resume")}>Resume</li>
+                    <li className={styles.link} onClick={() => goTo("/contact")}>Contact</li>
+                </ul>
+            </div>
         </>
     );
   }

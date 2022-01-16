@@ -92,8 +92,8 @@ const contact_hexagons = [
     ["null", "", "dark"],
     ["null", "/profile-photo.jpg", "dark"],
     ["email", "/mail-icon.png", "colored"],
-    ["null", "", "dark"],
     ["null", "", "invisible"],
+    ["null", "", "dark"],
 
     ["null", "", "invisible"],
     ["null", "", "dark"],

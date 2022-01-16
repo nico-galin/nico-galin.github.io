@@ -3,9 +3,11 @@ import React from 'react';
 import Button from '../../components/Button/Button';
 import Hexagon from '../../components/Hexagon/Hexagon';
 import { useNavigate } from 'react-router-dom';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Home = () => {
     const navigate = useNavigate();
+    const { width } = useWindowDimensions();
     const workWithMe = () => {
         navigate('/contact');
     }
@@ -20,7 +22,7 @@ const Home = () => {
                 <div className={styles.dummy} />
                 <div className={styles.content}>
                     <div className={styles.title}>Hey, I'm Nico.</div>
-                    <div className={styles.subtitle}>I create modern websites, apps, and tools with Human-Centered Design principles. Oh, and love minimalism.</div>
+                    <div className={styles.subtitle}>I create modern websites, apps, and tools with Human-Centered Design principles. Oh, and I love minimalism.</div>
                     <div className={styles.buttonContainer}>
                         <div className={styles.button_left}>
                             <div className={styles.button_lineSmall} />
@@ -36,9 +38,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className={styles.hexagons_wrapper}>
-                    <div className={styles.hexagons}>
-                        <Hexagon size={200} color={"colored"} animationDelay={1.5}/>
-                        <Hexagon size={200} color={"colored"} animationDelay={1.5}/>
+                    <div className={styles.hexagons} style={{ marginBottom: `-${width >= 850 ? 110 : 55}px`}}>
+                        <Hexagon size={width >= 850 ? 200 : 100} color={"colored"} animationDelay={1.5}/>
+                        <Hexagon size={width >= 850 ? 200 : 100} color={"colored"} animationDelay={1.5}/>
                     </div>
                 </div>
             </div>

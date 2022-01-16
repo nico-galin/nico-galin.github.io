@@ -11,7 +11,7 @@
     width: 100%;
     height: calc(100vh - 65px);
     --anim-duration: 1s;
-
+    --edgeLine-opacity: 1;
     > .edgeLine {
         position: absolute;
         @extend .fadeIn;
@@ -137,16 +137,10 @@
     background-color: none;
 }
 
-.button_right {
-    
-}
-
-.button_left {
-
-}
-
 .hexagons {
-    margin-bottom: -110px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
 }
 
 .title {
@@ -219,26 +213,34 @@
 
 @keyframes fadeIn {
     0% {opacity:0;}
-    100% {opacity:1;}
+    100% {opacity:var(--edgeLine-opacity);}
   }
   
 @-moz-keyframes fadeIn {
 0% {opacity:0;}
-100% {opacity:1;}
+100% {opacity:var(--edgeLine-opacity);}
 }
 
 @-webkit-keyframes fadeIn {
 0% {opacity:0;}
-100% {opacity:1;}
+100% {opacity:var(--edgeLine-opacity);}
 }
 
 @-o-keyframes fadeIn {
 0% {opacity:0;}
-100% {opacity:1;}
+100% {opacity:var(--edgeLine-opacity);}
 }
 
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
-100% {opacity:1;}
+100% {opacity:var(--edgeLine-opacity);}
+}
+
+@media only screen and (max-width: 850px) {
+    .wrapper {
+        > .edgeLine {
+            --edgeLine-opacity: 0.3;
+        }
+    }
 }
   

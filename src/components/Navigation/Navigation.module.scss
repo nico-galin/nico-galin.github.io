@@ -41,6 +41,7 @@ nav {
 .navigation > li, .leftNavigation > li {
     text-align: center;
     padding: 9px 45px;
+    cursor: pointer;
 }
 
 .navigation > li:hover, .leftNavigation > li:hover {
@@ -86,4 +87,58 @@ nav {
 .selBar_quarter {
     @extend .selBar;
     width: 27%;
+}
+
+.fullpageNav_container {
+    position: fixed;
+    display: flex;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    margin-top: 65px;
+    height: calc(100vh - 65px);
+    background-color: #1c1c1c;
+    transition: all 0.5s ease-in-out;
+}
+
+.fullpageNav_hidden {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.fullpageNav {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    > * {
+        cursor: pointer;
+    }
+    > *:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .fullpageNav_container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .navigation > li {
+        padding-right: 35px;
+    }
+    .leftNavigation > li {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

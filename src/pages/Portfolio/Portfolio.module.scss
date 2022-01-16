@@ -73,3 +73,10 @@
     opacity: 0;
     transition: all 0.8s ease-in-out;
 }
+
+
+@media only screen and (max-width: 850px) {
+    .menu {
+        bottom: 5vw;
+    }
+}
