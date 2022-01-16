@@ -3,7 +3,7 @@ import React from 'react';
 
 const MenuIcon = ({ onClick, checked }) => {
     return (
-        <label for="check">
+        <label htmlFor="check">
             <input type="checkbox" id="check" onChange={onClick} checked={checked}/> 
             <span></span>
             <span></span>

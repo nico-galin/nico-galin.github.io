@@ -3,6 +3,8 @@ const euclideanDist = (p1, p2) => {
 }
 
 const notBlank = (val) => {
+    if (val === 0) return true;
+    if (!val) return false;
     if (val == null) return false;
     if (val === {}) return false;
     if (typeof val == "string" && (val === "" || val.trim() === "" || val === "null")) return false

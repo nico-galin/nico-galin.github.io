@@ -5,11 +5,13 @@ import { iconography_hexagons, project_hexagons } from '../../data/hexagons';
 import { useDraggable } from 'react-use-draggable-scroll';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { notBlank } from '../../utils';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Portfolio = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const ref = useRef();
+    const { width } = useWindowDimensions();
     const { events } = useDraggable(ref, 0.8);
     const [menuChoice, setMenuChoice] = useState()
     let [iconography_class, proj_class] = [null, null]
@@ -25,8 +27,8 @@ const Portfolio = () => {
         const menuOption = location.pathname.split("/")[2]
         menuOption === "projects" ? setMenuChoice(1) : setMenuChoice(0);
         if(ref) {
-            ref.current.scrollTop = ref.current.scrollHeight/5;
-            ref.current.scrollLeft = ref.current.scrollWidth/6;
+            ref.current.scrollTop = ref.current.scrollHeight/(width > 650 ? 5 : 4);
+            ref.current.scrollLeft = ref.current.scrollWidth/(width > 650 ? 6 : 3);
         }
     }, [navigate]);
 
@@ -55,12 +57,12 @@ const Portfolio = () => {
                     <Routes>
                         <Route path="/" element={
                             <div className={menuChoice === 0 ? styles.grid : styles.grid_hidden}>
-                                <HexGrid size={150} length={6} width={9} data={iconography_hexagons} start={[3, 2]} delayFraction={3} onClick={selectItem}/>
+                                <HexGrid size={width > 850 ? 150 : 90} length={6} width={9} data={iconography_hexagons} start={[3, 2]} delayFraction={3} onClick={selectItem}/>
                             </div>
                             } />
                         <Route path="/projects" element={
                             <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
-                                <HexGrid size={300} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} delayFraction={2} onClick={selectItem}/>
+                                <HexGrid size={width > 850 ? 300 : 250} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} delayFraction={2} onClick={selectItem}/>
                             </div>
                             } />
                     </Routes>

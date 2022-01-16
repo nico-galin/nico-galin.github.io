@@ -33,18 +33,16 @@
     margin: auto;
     flex-direction: row;
     justify-content: stretch;
-    margin: 120px 80px;
+    margin: 120px 80px 50px 80px;
 }
 
 .leftColumn {
-    @extend .fadeIn;
     animation-delay: 0.4s;
-    flex: 1;
     margin-right: -40px;
     justify-content: left;
     --margin-bottom: 30px;
-    opacity: 0;
     max-width: 500px;
+    width: 100%
 }
 
 .middleColumn {
@@ -69,6 +67,8 @@
 }
 
 .backBtn {
+    @extend .fadeIn;
+    animation-delay: 0.5s;
     width: 100%;
     padding: 8px 0 8px 0;
     border-bottom: 2px solid #DB931E;
@@ -77,6 +77,7 @@
     > * {
         transition: all ease 0.8s;
     }
+    opacity: 0;
 }
 
 .summary {
@@ -84,6 +85,9 @@
 }
 
 .titles {
+    @extend .fadeIn;
+    animation-delay: 1s;
+    opacity: 0;
     display: block;
     text-transform: uppercase;
     margin-bottom: var(--margin-bottom);
@@ -103,7 +107,16 @@
 }
 
 .description {
-    margin-bottom: 50px
+    @extend .fadeIn;
+    animation-delay: 1s;
+    opacity: 0;
+    margin-bottom: 50px;
+}
+
+.externalBtn {
+    @extend .fadeIn;
+    animation-delay: 1.5s;
+    opacity: 0;
 }
 
 .backBtn:hover {
@@ -221,4 +234,71 @@
     0% {width:0;}
     100% {width:100%;}
 }
-  
+
+@media only screen and (max-width: 850px) {
+    .container {
+        flex-direction: column;
+        margin: 20px 60px 50px 60px;
+    }
+    .summary {
+        margin-top: 50px;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+
+    .leftColumn {
+        margin: auto;
+    }
+    .middleColumn {
+        margin-top: 0;
+        flex-direction: column;
+        margin: auto;
+    }
+    .rightColumn {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 30px;
+        animation-delay: 0.8s;
+        flex: 1;
+        justify-content: center;
+        opacity: 0;
+    }
+    .hexagonTailIcon {
+        position: relative;
+        margin: -40px auto 0 auto;
+        padding-left: 40px;
+    }
+    .hexagonTailProj {
+        margin: -43px auto 0 auto;
+        padding-left: 40;
+    }
+    .hexWrapper::before {
+        transform: rotate(-50deg) translateY(-25px) translateX(40px);
+    }
+    
+    .hexWrapper2::before {
+        transform: rotate(-50deg) translateY(-35px) translateX(10px);
+    }
+    .category {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        > p {
+            margin: 0;
+        }
+        > :not(:nth-child(1)) {
+            border-left: 2px solid #DB931E;
+            padding-left: 10px;
+            > * {
+                margin-top: 0;
+                margin-bottom: 3px;
+            }
+        }
+        > :nth-child(1) {
+            color:#A7A7A7;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+    }
+}

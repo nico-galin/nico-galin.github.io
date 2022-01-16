@@ -13,8 +13,8 @@ label{
 label span{
     background: #fff;
     border-radius:10px;
-    height:2.3px;
-    margin: 2.3px 0;
+    height:2.333px;
+    margin: 2.3333px 0;
     transition: .3s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 

@@ -4,15 +4,17 @@ import HexGrid from '../../components/HexGrid/HexGrid';
 import { contact_hexagons } from '../../data/hexagons';
 import { useDraggable } from 'react-use-draggable-scroll';
 import { useNavigate } from 'react-router-dom';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 const Contact = () => {
     const navigate = useNavigate();
     const ref = useRef();
+    const { width } = useWindowDimensions();
     const { events } = useDraggable(ref, 0.8);
     useEffect(() => {
         if(ref) {
-            ref.current.scrollTop = ref.current.scrollHeight/5;
-            ref.current.scrollLeft = ref.current.scrollWidth/6;
+            ref.current.scrollTop = ref.current.scrollHeight/(width > 650 ? 5 : 4);
+            ref.current.scrollLeft = ref.current.scrollWidth/(width > 650 ? 6 : 3);
         }
     }, [navigate]);
 
@@ -39,7 +41,7 @@ const Contact = () => {
             <div className={styles.vignette} />
             <div className={styles.scrollableArea} ref={ref} {...events}>
                 <div className={styles.gridPadding}>
-                    <HexGrid size={270} large length={3} width={5} data={contact_hexagons} start={[1, 1]} delayFraction={3} onClick={selectItem}/>
+                    <HexGrid size={width > 850 ? 270 : 160} large length={3} width={5} data={contact_hexagons} start={[1, 1]} delayFraction={3} onClick={selectItem}/>
                 </div>
             </div>
         </div>
