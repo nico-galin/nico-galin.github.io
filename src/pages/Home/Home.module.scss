@@ -102,6 +102,7 @@
 }
 
 .button_lineSmall {
+    --anim-duration: 1.5s;
     height: 2px;
     width: 0;
     max-width: 240px;
@@ -116,6 +117,7 @@
 }
 
 .button_lineLarge {
+    --anim-duration: 1.5s;
     height: 2px;
     width: 0;
     max-width: 380px;
