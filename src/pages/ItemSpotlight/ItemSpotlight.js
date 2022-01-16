@@ -5,6 +5,7 @@ import portfolio from '../../data/portfolio';
 import Hexagon from '../../components/Hexagon/Hexagon';
 import HexGrid from '../../components/HexGrid/HexGrid';
 import { notBlank } from '../../utils';
+import Button from '../../components/Button/Button';
 
 const itemTailGrid = [
     ["null","", "light"],
@@ -59,7 +60,7 @@ const ItemSpotlight = () => {
                                 </div>
                                 <p className={styles.description}>{data.description}</p>
                                 {notBlank(data.externalUrl) && notBlank(data.externalSiteName) &&
-                                    <a href={data.externalUrl} target="_blank" className={styles.externalBtn} rel="noreferrer">View on {data.externalSiteName}</a>
+                                    <Button href={data.externalUrl} label={`View on ${data.externalSiteName}`} />
                                 }
                                 </div>
                         </div>

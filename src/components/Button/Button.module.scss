@@ -1,0 +1,22 @@
+.btn {
+    padding: 8px 25px;
+    border: 2px solid #DB931E;
+    border-radius: 5px;
+    color: #DB931E;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:smaller;
+    background-image: linear-gradient(135deg, #DB931E 50%, transparent 51%);
+    background-size: 100px 100px; /* some initial size to get the slanted appearance */
+    background-position: -50px -50px; /* negative positioning to hide it initially */
+    background-repeat: no-repeat;
+    transition: all ease 0.8s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-size: 200% 200%; /* 200% because gradient is colored only for 50% */
+    background-position: 0px 0px; /* bring it fully into view */
+    color: #FFF;
+}
