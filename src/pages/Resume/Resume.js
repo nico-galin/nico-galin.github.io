@@ -26,7 +26,7 @@ Object.keys(experienceRaw).forEach((key) => {
 const getSubtitles = (data) => {
     let ret = [];
     data.forEach(el => {
-        ret.push(`${el.title} / ${el.start} - ${el.end}${notBlank(el.paren) ? " (" + el.paren + ")" : null}`);
+        ret.push(`${el.title} / ${el.start} - ${el.end}${notBlank(el.paren) ? " (" + el.paren + ")" : ""}`);
     })
     return ret;
 }

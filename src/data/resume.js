@@ -15,6 +15,7 @@ const resume = {
             "company": "Web Development at Berkeley",
             "start": "Dec 2021",
             "end": "Present",
+            "paren": "",
             "descriptions": [
                 "Working on client acquisition and outreach to Berkeley-founded companies and student organizations",
                 "Implementing organization-wide development conventions and guiding engineering culture",
@@ -103,7 +104,7 @@ const resume = {
     "projects": [
         {
             "title": "Crypto Mining",
-            "years": ["]2021"],
+            "years": ["2021"],
             "description": "Set up Ethereum (ETH) and Monero (XMR) mining rigs using custom built desktop PCs running Windows and HiveOS."
         },
         {
@@ -144,7 +145,7 @@ const resume = {
             "start": "Sep 2020",
             "end": "May 2021",
             "paren": "9 MO",
-            "description": "Mentoring React.js, HTML, and CSS for an introductory web design course at Berkeley.",
+            "description": "Mentoring React.js, HTML, and CSS for an introductory web design course at Berkeley, with weekly office hours and project support.",
         },
         {
             "title": "Internal/External Affairs Committee Member",
@@ -152,7 +153,7 @@ const resume = {
             "start": "Jan 2021",
             "end": "Present",
             "paren": "",
-            "description": "",
+            "description": "Creating and maintaining all logos, icons, presentation decks, and other marketing materials.",
         },
         {
             "title": "Web Dev Project Mentor",
@@ -160,7 +161,7 @@ const resume = {
             "start": "Nov 2021",
             "end": "Dec 2021",
             "paren": "1MO",
-            "description": "",
+            "description": "Mentoring students in the Intro to Fullstack Development course on their final projects and presentations, which were their own application ideas and implementations.",
         },
     ]
 }
