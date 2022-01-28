@@ -134,7 +134,7 @@ const resume = {
         },
     ],
     "skills": {
-        "languages": "Python, Java,Script, Java, C, RISC-V, HTML, CSS, SCSS",
+        "languages": "Python, JavaScript, Java, C, RISC-V, HTML, CSS, SCSS",
         "technologies": "React.js, React Native, Angular, Apache Cordova, Capacitor, REST, Node.js, Git",
         "project management": "JIRA, Confluence, SCRUM, Agile, Asuna, Lucid Chart",
     },
