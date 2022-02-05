@@ -37,11 +37,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.hexagons_wrapper}>
+                <div>
                     <div className={styles.hexagons} style={{ marginBottom: `-${width >= 850 ? 110 : 55}px`}}>
                         <Hexagon size={width >= 850 ? 200 : 100} color={"colored"} animationDelay={1.5}/>
-                        <Hexagon size={width >= 850 ? 200 : 100} color={"colored"} animationDelay={1.5}/>
+                        {width >= 850 && <Hexagon size={width >= 850 ? 200 : 100} color={"colored"} animationDelay={1.5}/>}
                     </div>
+                    <img className={styles.watermark} src={'/watermark_white.png'} alt={'logo'} width={width >= 850 ? 130 : 90} />
                 </div>
             </div>
         </div>

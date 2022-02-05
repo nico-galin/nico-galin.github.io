@@ -161,6 +161,12 @@
     opacity: 0;
 }
 
+.watermark {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
 @keyframes expandInSmall {
     0% {width:0;}
     100% {width:10vw;}
