@@ -217,6 +217,21 @@ const portfolio = {
         },
         "timestamp": "2022"
     },
+    "byrdle_project": {
+        "title": "Byrdle",
+        "type": "project",
+        "subtitle": "Personal Project",
+        "description": "Wordle clone with 4, 5, and 6 letter options and social media integration.",
+        "description_short": "Wordle clone with 4, 5, and 6 letter options and social media integration.",
+        "imageUrl": "/code-icon.png",
+        "externalSiteName": "Github",
+        "externalUrl": "https://github.com/nico-galin/byrdle",
+        "categories": {
+            "languages": ["Javascript", "HTML", "SCSS"],
+            "frameworks": ["React", "JSX"],
+        },
+        "timestamp": "2022"
+    },
 }
 
 export default portfolio;

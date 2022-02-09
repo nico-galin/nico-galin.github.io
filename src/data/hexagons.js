@@ -67,7 +67,7 @@ const project_hexagons = [
     ["crypto_mining_project","", "colored"],
     ["","", "colored"],
     ["sentiment_analysis_project","", "colored"],
-    ["","", "colored"],
+    ["byrdle_project","", "colored"],
 
     ["","", "dark"],
     ["lyftable_project","", "colored"],
