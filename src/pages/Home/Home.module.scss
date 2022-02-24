@@ -76,9 +76,9 @@
 
 .buttonContainer {
     @extend .fadeIn;
-    animation-delay: 1s;
+    animation-delay: 0.7s;
     display: flex;
-    margin: 50px 0 20px 0;
+    margin: 40px 0;
     width: max-content;
     justify-content: center;
     opacity: 0;
@@ -154,6 +154,16 @@
 .subtitle {
     @extend .fadeIn;
     animation-delay: 0.5s;
+    color:#7a7a7a;
+    font-size:large;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0;
+}
+
+.subtitleBottom {
+    @extend .fadeIn;
+    animation-delay: 1s;
     color:#7a7a7a;
     font-size:large;
     max-width: 500px;

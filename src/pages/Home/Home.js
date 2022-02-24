@@ -36,6 +36,7 @@ const Home = () => {
                             <div className={styles.button_lineSmall} />
                         </div>
                     </div>
+                    <div className={styles.subtitleBottom}>I love meeting interesting people. If you're in the Bay Area and want to grab coffee, don't hesitate to reach out.</div>
                 </div>
                 <div>
                     <div className={styles.hexagons} style={{ marginBottom: `-${width >= 850 ? 110 : 55}px`}}>

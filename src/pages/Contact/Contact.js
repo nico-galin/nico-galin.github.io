@@ -38,6 +38,9 @@ const Contact = () => {
     }
     return (
         <div className={styles.container}>
+            <div className={styles.popup}>
+                Hi
+            </div>
             <div className={styles.vignette} />
             <div className={styles.scrollableArea} ref={ref} {...events}>
                 <div className={styles.gridPadding}>
