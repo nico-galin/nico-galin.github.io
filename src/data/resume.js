@@ -1,6 +1,16 @@
 const resume = {
     "experience": [
         {
+            "title": "Tech Lead and Developer",
+            "company": "Muusic",
+            "start": "Jan 2021",
+            "end": "Aug 2021",
+            "paren": "8 MO",
+            "descriptions": [
+                "Developing a Web3 application on the Polygon (Ethereum L2) chain in TypeScript (TS), ChakraUI, Pinata, and Firebase with audio streaming and Zora smart contract integration."
+            ]
+        },
+        {
             "title": "EES Software Engineering Intern",
             "company": "Apple",
             "start": "May 2022",
@@ -17,16 +27,6 @@ const resume = {
             "paren": "8 MO",
             "descriptions": [
                 "Developed and documented PCB design and validation utilities in frontend frameworks for internal use in an Agile development environment."
-            ]
-        },
-        {
-            "title": "Tech Lead and Developer",
-            "company": "Muusic",
-            "start": "Jan 2021",
-            "end": "Aug 2021",
-            "paren": "8 MO",
-            "descriptions": [
-                "Developing a Web3 application on the Polygon (Ethereum L2) chain in TypeScript (TS), ChakraUI, Pinata, and Firebase with audio streaming and Zora smart contract integration."
             ]
         },
         {
@@ -132,6 +132,12 @@ const resume = {
         }
     ],
     "projects": [
+        {
+            "title": "Meet",
+            "years": ["2022"],
+            "description": "Centralized platform for interns with nearby corporate housing to access group chats, social media platforms, and schedule meetups"
+
+        },
         {
             "title": "Crypto Mining",
             "years": ["2021"],
