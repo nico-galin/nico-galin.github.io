@@ -1,6 +1,15 @@
 const resume = {
     "experience": [
         {
+            "title": "EES Software Engineering Intern",
+            "company": "Apple",
+            "start": "May 2022",
+            "end": "Present",
+            "descriptions": [
+                "Developing internal tools in React and Grails to aid in hardware development, BOM management, PCB design, and more."
+            ]
+        },
+        {
             "title": "ECAD Software Intern",
             "company": "Apple",
             "start": "Jan 2021",
@@ -8,6 +17,27 @@ const resume = {
             "paren": "8 MO",
             "descriptions": [
                 "Developed and documented PCB design and validation utilities in frontend frameworks for internal use in an Agile development environment."
+            ]
+        },
+        {
+            "title": "Tech Lead and Developer",
+            "company": "Muusic",
+            "start": "Jan 2021",
+            "end": "Aug 2021",
+            "paren": "8 MO",
+            "descriptions": [
+                "Developing a Web3 application on the Polygon (Ethereum L2) chain in TypeScript (TS), ChakraUI, Pinata, and Firebase with audio streaming and Zora smart contract integration."
+            ]
+        },
+        {
+            "title": "President",
+            "company": "Web Development at Berkeley",
+            "start": "May 2022",
+            "end": "Present",
+            "paren": "",
+            "descriptions": [
+                "Enacting and executing long-term goals for Berkeley’s premier web development organization regarding industry impact, developer/designer skills, and community development",
+                "Spearheading the acquisition of sproul.club, an organization that I worked with for several semesters prior",
             ]
         },
         {
@@ -26,7 +56,7 @@ const resume = {
             "title": "Frontend Developer",
             "company": "Web Development at Berkeley",
             "start": "Sep 2021",
-            "end": "Dec 2021",
+            "end": "May 2022",
             "paren": "4 MO",
             "descriptions": [
                 "Developing an analytics dashboard for Provecho in React.js, SCSS, and Firebase on a team of 8 using the Agile/SCRUM project management framework.",
