@@ -176,7 +176,7 @@ const portfolio = {
         "title": "Sentiment Analysis",
         "type": "project",
         "subtitle": "Personal Project",
-        "description": "Machine learning algorithm to determine the general sentiment (Positive, Neutral, Negative) of any text block.",
+        "description": "Machine learning algorithm to determine the general sentiment of any text block.",
         "description_short": "",
         "imageUrl": "/code-icon.png",
         "externalSiteName": "",
