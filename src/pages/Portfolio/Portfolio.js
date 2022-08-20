@@ -62,7 +62,7 @@ const Portfolio = () => {
                             } />
                         <Route path="/projects" element={
                             <div className={menuChoice === 1 ? styles.grid : styles.grid_hidden}>
-                                <HexGrid size={width > 850 ? 300 : 250} length={3} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} delayFraction={2} onClick={selectItem}/>
+                                <HexGrid size={width > 850 ? 300 : 250} length={4} width={5} horizontalOffset={3} data={project_hexagons} start={[2, 1]} delayFraction={2} onClick={selectItem}/>
                             </div>
                             } />
                     </Routes>

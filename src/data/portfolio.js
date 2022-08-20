@@ -232,6 +232,36 @@ const portfolio = {
         },
         "timestamp": "2022"
     },
+    "naai_project": {
+        "title": "Naai",
+        "type": "project",
+        "subtitle": "Personal Project",
+        "description": "Architecting, designing, and developing a playful and highly animated marketing site for Naai, a platform reimagining the digital thrifting experience.",
+        "description_short": "Highly animated and playful marketing site for a promising new thrifting app.",
+        "imageUrl": "/code-icon.png",
+        "externalSiteName": "their site",
+        "externalUrl": "https://naai.app",
+        "categories": {
+            "languages": ["TypeScript", "HTML", "SCSS"],
+            "frameworks": ["React.js", "Next.js"],
+        },
+        "timestamp": "2022"
+    },
+    "meet_project": {
+        "title": "Meet",
+        "type": "project",
+        "subtitle": "Personal Project",
+        "description": "Elegant web platform for interns in similar regions to meet through their corporate housing locations, shared interests, or spontaneous events.",
+        "description_short": "Elegant platform for interns to meet through corporate housing and shared interests.",
+        "imageUrl": "/code-icon.png",
+        "externalSiteName": "its site",
+        "externalUrl": "https://meet.nicogalin.com",
+        "categories": {
+            "languages": ["JavScript", "HTML", "SCSS"],
+            "frameworks": ["React.js", "Firebase"],
+        },
+        "timestamp": "2022"
+    },
 }
 
 export default portfolio;

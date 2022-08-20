@@ -4,29 +4,30 @@ const resume = {
             "title": "Tech Lead and Developer",
             "company": "Muusic",
             "start": "Jan 2021",
-            "end": "Aug 2021",
-            "paren": "8 MO",
+            "end": "Present",
             "descriptions": [
-                "Developing a Web3 application on the Polygon (Ethereum L2) chain in TypeScript (TS), ChakraUI, Pinata, and Firebase with audio streaming and Zora smart contract integration."
+                "Building a Web3 application on the Polygon (Ethereum L2) chain in React.js (in TypeScript), ChakraUI, Pinata, and Firebase with audio streaming and Zora smart contract integration.",
+                "Overseeing cross-functional web application development and larger scale business development operations."
             ]
         },
         {
             "title": "EES Software Engineering Intern",
             "company": "Apple",
             "start": "May 2022",
-            "end": "Present",
+            "end": "Aug 2022",
+            "paren": "4 MO",
             "descriptions": [
-                "Developing internal tools in React and Grails to aid in hardware development, BOM management, PCB design, and more."
+                "Architected highly scalable dashboards and data analytics pipelines in React.js and Grails (Groovy) to aid in hardware development, BOM management, PCB design, and more."
             ]
         },
         {
-            "title": "ECAD Software Intern",
+            "title": "ECAD Software Engineering Intern",
             "company": "Apple",
             "start": "Jan 2021",
             "end": "Aug 2021",
             "paren": "8 MO",
             "descriptions": [
-                "Developed and documented PCB design and validation utilities in frontend frameworks for internal use in an Agile development environment."
+                "Developed and documented PCB design and validation utilities in several frontend frameworks for company-wide use"
             ]
         },
         {
@@ -36,20 +37,19 @@ const resume = {
             "end": "Present",
             "paren": "",
             "descriptions": [
-                "Enacting and executing long-term goals for Berkeley’s premier web development organization regarding industry impact, developer/designer skills, and community development",
-                "Spearheading the acquisition of sproul.club, an organization that I worked with for several semesters prior",
+                "Managing and directing Berkeley’s premier web development organization to realize business priorities and expand industry impact, improve developer/designer skills (mentoring React.js, ES6, etc.), and community development.",
+                "Spearheading the acquisition of sproul.club, a community-building organization that I worked with for several semesters prior.",
             ]
         },
         {
             "title": "External Vice President (VP Engineering)",
             "company": "Web Development at Berkeley",
             "start": "Dec 2021",
-            "end": "Present",
-            "paren": "",
+            "end": "May 2022",
+            "paren": "6 MO",
             "descriptions": [
-                "Working on client acquisition and outreach to Berkeley-founded companies and student organizations",
-                "Implementing organization-wide development conventions and guiding engineering culture",
-                "Overseeing product managers and developers on industry projects"
+                "Conducted industry client acquisition, implemented pragmatic organization-wide development conventions, standardized development infrastucture, guided engineering culture.",
+                "Worked on client acquisition and outreach to Berkeley-founded companies and student organizations.",
             ]
         },
         {
@@ -59,7 +59,7 @@ const resume = {
             "end": "May 2022",
             "paren": "4 MO",
             "descriptions": [
-                "Developing an analytics dashboard for Provecho in React.js, SCSS, and Firebase on a team of 8 using the Agile/SCRUM project management framework.",
+                "Led frontend development and directed unit testing for a large scale web app using React.js (in TypeScript) and AWS in an Agile/SCRUM environment.",
             ]
         },
         {
@@ -69,8 +69,8 @@ const resume = {
             "end": "Sep 2021",
             "paren": "9 MO",
             "descriptions": [
-                "Managing 5 team-members across Product Design, Backend and Frontend Development, and User Testing sectors developing the sproul.club student account features.",
-                "Served as a SCRUM Master for following the Agile workflow with JIRA.",
+                "Managed 5 team-members across Product Design, Backend and Frontend Development, and User Testing sectors developing the sproul.club student account features.",
+                "Served as a SCRUM Master, following the Agile workflow with JIRA.",
             ]
         },
         {
@@ -80,7 +80,7 @@ const resume = {
             "end": "Jan 2021",
             "paren": "4 MO",
             "descriptions": [
-                "Web development in ReactJS, Redux, and Flask for sproul.club, a platform providing Berkeley students access to campus organizations and clubs.",
+                "Led organization-wide fullstack development efforts and implemented user reasearch insights for a community-driven web app using React.js and Flask in an Agile/SCRUM environment.",
             ]
         },
         {
@@ -133,15 +133,15 @@ const resume = {
     ],
     "projects": [
         {
-            "title": "Meet",
+            "title": "Naai",
             "years": ["2022"],
-            "description": "Centralized platform for interns with nearby corporate housing to access group chats, social media platforms, and schedule meetups"
-
+            "description": "Architecting, designing, and developing a playful and highly animated marketing site for Naai, a platform reimagining the digital thrifting experience."
         },
         {
-            "title": "Crypto Mining",
-            "years": ["2021"],
-            "description": "Set up Ethereum (ETH) and Monero (XMR) mining rigs using custom built desktop PCs running Windows and HiveOS."
+            "title": "Meet",
+            "years": ["2022"],
+            "description": "Developed a centralized platform for interns with nearby corporate housing to access group chats, social media platforms, and schedule meetups"
+
         },
         {
             "title": "Lyftable",
@@ -159,6 +159,11 @@ const resume = {
             "description": "DIscord bot that tracks user disconnect times and provides analytics (graphs, means, etc.) with bedtime predictions and server bedtime leaderboards."
         },
         {
+            "title": "Crypto Mining",
+            "years": ["2021"],
+            "description": "Set up Ethereum (ETH) and Monero (XMR) mining rigs using custom built desktop PCs running Windows and HiveOS."
+        },
+        {
             "title": "Sentiment Analysis",
             "years": ["2019"],
             "description": "Machine learning algorithm to determine the general sentiment (Positive, Neutral, Negative) of text using TensorFlow and Python3."
@@ -170,8 +175,8 @@ const resume = {
         },
     ],
     "skills": {
-        "languages": "Python, JavaScript, Java, C, RISC-V, HTML, CSS, SCSS",
-        "technologies": "React.js, React Native, Angular, Apache Cordova, Capacitor, REST, Node.js, Git",
+        "languages": "TypeScript, JavaScript, Python, Java, GoLang, RISC-V, HTML, CSS, SCSS",
+        "technologies": "Next.js, React.js, React Native, Angular, Apache Cordova, Capacitor, REST, Node.js, Git",
         "project management": "JIRA, Confluence, SCRUM, Agile, Asuna, Lucid Chart",
     },
     "volunteer": [

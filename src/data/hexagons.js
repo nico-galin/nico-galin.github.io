@@ -63,23 +63,30 @@ const iconography_hexagons = [
 ];
 
 const project_hexagons = [
-    ["slate_project","", "colored"],
-    ["crypto_mining_project","", "colored"],
+    ["slate_project","", "light"],
+    ["naai_project","", "light"],
     ["","", "colored"],
-    ["sentiment_analysis_project","", "colored"],
-    ["byrdle_project","", "colored"],
+    ["sentiment_analysis_project","", "light"],
+    ["byrdle_project","", "light"],
 
     ["","", "dark"],
-    ["lyftable_project","", "colored"],
-    ["niqbot_project","", "colored"],
+    ["lyftable_project","", "light"],
+    ["personal_site_project","", "light"],
     ["","", "dark"],
     ["","", "invisible"],
 
-    ["","", "invisible"],
-    ["personal_site_project","", "colored"],
+    ["niqbot_project","", "light"],
+    ["meet_project","", "light"],
+    ["","", "dark"],
+    ["numc_project","", "light"],
+    ["","", "light"],
+
+    ["","", "light"],
+    ["","", "colored"],
+    ["crypto_mining_project","", "light"],
     ["","", "colored"],
     ["","", "dark"],
-    ["numc_project","", "colored"],
+    
 ]
 
 const contact_hexagons = [
