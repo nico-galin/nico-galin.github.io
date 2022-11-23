@@ -58,7 +58,7 @@ const Portfolio: NextPage<Portfolio_Props> = ({
   return (
     <>
       <Head>
-        <title>Nico Galin | Portfolio</title>
+        <title>Portfolio | Nico Galin</title>
         <meta
           name="description"
           content="View Nico's iconography, design, and development work in an interactive portal."

@@ -50,7 +50,7 @@ const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Nico Galin | Contact</title>
+        <title>Contact | Nico Galin</title>
         <meta
           name="description"
           content="Contact Nico via LinkedIn, Email, Instagram, Handshake, and more."

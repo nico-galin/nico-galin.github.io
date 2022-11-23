@@ -119,7 +119,7 @@ const Item: NextPage<Item_Props> = ({ data }) => {
   return (
     <>
       <Head>
-        <title>Nico Galin | {data.title}</title>
+        <title>{data.title} | Nico Galin</title>
         <meta name="description" content={data.description} key="desc" />
       </Head>
       <Navigation />

@@ -66,7 +66,7 @@ const Resume: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Nico Galin | Resume</title>
+        <title>Resume | Nico Galin</title>
         <meta
           name="description"
           content="View Nico's resume in a gorgeous format."
