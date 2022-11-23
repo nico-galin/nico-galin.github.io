@@ -1,153 +1,174 @@
-@import '~compass-mixins/lib/compass/css3';
-@import '~mathsass/dist/math';
+@import "~mathsass/dist/math";
 
-@mixin rounded-hex($main-radius: 30%, $rounding-radius: 10%, $rotated: false, $precision: 20) {
-	$n: 6;
-	$central-angle: 360deg/$n;
-	$angle: ($n - 2)*180deg/$n;
-	$max-var-angle: 2*(90deg - $angle/2);
-	$precision: 6;
-	$unit-var-angle: $max-var-angle/$precision;
-	
-	$r-diff: $main-radius + $rounding-radius;
+@mixin rounded-hex(
+  $main-radius: 30%,
+  $rounding-radius: 10%,
+  $rotated: false,
+  $precision: 20
+) {
+  $n: 6;
+  $central-angle: 360deg / $n;
+  $angle: ($n - 2) * 180deg / $n;
+  $max-var-angle: 2 * (90deg - $angle/2);
+  $precision: 6;
+  $unit-var-angle: $max-var-angle/$precision;
 
-	$points: ();
+  $r-diff: $main-radius + $rounding-radius;
 
-	@for $i from 0 to $n {
-		$vertex-angle: $i*$central-angle +
-			if($rotated, -90deg, 0deg);
-		$vertex-x: 50% + $r-diff*cos($vertex-angle);
-		$vertex-y: 50% + $r-diff*sin($vertex-angle);
+  $points: ();
 
-		@for $j from 0 through $precision {
-			$curr-angle: $vertex-angle + 
-				($j - .5*$precision)*$unit-var-angle;
-			$x: $vertex-x + 
-				$rounding-radius*cos($curr-angle);
-			$y: $vertex-y + 
-				$rounding-radius*sin($curr-angle);
+  @for $i from 0 to $n {
+    $vertex-angle: $i * $central-angle + if($rotated, -90deg, 0deg);
+    $vertex-x: 50% + $r-diff * cos($vertex-angle);
+    $vertex-y: 50% + $r-diff * sin($vertex-angle);
 
-			$points: $points, $x $y;
-		}
-	}
-	clip-path: polygon($points);
+    @for $j from 0 through $precision {
+      $curr-angle: $vertex-angle + ($j - 0.5 * $precision) * $unit-var-angle;
+      $x: $vertex-x + $rounding-radius * cos($curr-angle);
+      $y: $vertex-y + $rounding-radius * sin($curr-angle);
+
+      $points: $points, $x $y;
+    }
+  }
+  clip-path: polygon($points);
 }
 
 .hexagon {
-	position: relative;
-	display: inline-block;
-	@include rounded-hex($rotated: true);
-    opacity: 0;
-    -webkit-animation: fadeIn ease-in 1s;
-    animation: fadeIn ease-in 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+  position: relative;
+  display: inline-block;
+  @include rounded-hex($rotated: true);
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1s;
+  animation: fadeIn ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
 }
 
 .hexagon_large {
-	display: inline-block;
-	@include rounded-hex($rotated: true,  $rounding-radius: 3%);
-    opacity: 0;
-    -webkit-animation: fadeIn ease-in 1s;
-    animation: fadeIn ease-in 1s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+  display: inline-block;
+  @include rounded-hex($rotated: true, $rounding-radius: 3%);
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1s;
+  animation: fadeIn ease-in 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
 }
 
 .hexagon_hover {
-    @extend .hexagon
+  @extend .hexagon;
 }
 
 .hexagon_hover:hover {
-    transform: scale(1.03);
-	cursor: pointer;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .hexagon_dark {
-    background: #292929;
+  background: #292929;
 }
 
 .hexagon_light {
-    background: white
+  background: white;
 }
 
 .hexagon_colored {
-    background: linear-gradient(90deg, #DA8E1C, #DA8E1C, #E4BC2F);
+  background: linear-gradient(90deg, #da8e1c, #da8e1c, #e4bc2f);
 }
 
 .hexagon_small {
-    width: 150px; height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 .hexagon_large {
-    width: 300px; height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .hexagon_inner {
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	justify-content: space-around;
-	text-align: center;
-	cursor: pointer;
-	color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  color: white;
 }
 
 .hexagon_inner_container {
-	padding: 0 25px;
-	justify-content: space-around;
-	text-align: center;
+  padding: 0 25px;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .hexagon_inner_header {
-	text-transform: uppercase;
-	font-size: larger;
-	font-weight: 700;
-	margin-bottom: 5px;
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .hexagon_inner_desc {
-	font-size: small;
+  font-size: small;
 }
 
 .hexagon_inner_footer {
-	text-transform: uppercase;
-	color: #646464;
-	font-weight: bold;
-	margin-top: 5px;
+  text-transform: uppercase;
+  color: #646464;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-  

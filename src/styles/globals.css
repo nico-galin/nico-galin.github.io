@@ -1,0 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: #1c1c1c;
+  color: white;
+  overflow-x: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}
