@@ -10,7 +10,7 @@ import { useDraggable } from "react-use-draggable-scroll";
 import validations from "../../utils/validations";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useRouter } from "next/router";
-import type { GetStaticPaths, GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import type { Hexagon } from "../../models/Hexagon";
 import type { ParsedUrlQuery } from "querystring";
 import Navigation from "../../components/Navigation";
@@ -19,7 +19,9 @@ interface Portfolio_Props {
   hexagons: Hexagon[];
 }
 
-const Portfolio = ({ hexagons = iconography_hexagons }: Portfolio_Props) => {
+const Portfolio: NextPage<Portfolio_Props> = ({
+  hexagons = iconography_hexagons,
+}) => {
   const router = useRouter();
   if (!hexagons) router.push("/");
   const ref = useRef() as MutableRefObject<HTMLElement>;

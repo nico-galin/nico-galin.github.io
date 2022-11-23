@@ -7,13 +7,15 @@ import { useDraggable } from "react-use-draggable-scroll";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useRouter } from "next/router";
 import Navigation from "../../components/Navigation";
+import type { NextPage } from "next";
 
-const Contact = () => {
+const Contact: NextPage = () => {
   const router = useRouter();
   const ref = useRef() as MutableRefObject<HTMLElement>;
   const navigate = router.pathname;
   const { width } = useWindowDimensions();
   const { events } = useDraggable(ref, { decayRate: 0.8 });
+
   useEffect(() => {
     if (ref) {
       ref.current.scrollTop =

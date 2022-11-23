@@ -8,7 +8,7 @@ import Button from "../../components/Button/Button";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useRouter } from "next/router";
 import type Project from "../../models/Project";
-import type { GetStaticPaths, GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import type { ParsedUrlQuery } from "querystring";
 import type { Hexagon as HexagonType } from "../../models/Hexagon";
 import Navigation from "../../components/Navigation";
@@ -40,7 +40,7 @@ interface Item_Props {
   data: Project;
 }
 
-const Item = ({ data }: Item_Props) => {
+const Item: NextPage<Item_Props> = ({ data }) => {
   const router = useRouter();
   const { width } = useWindowDimensions();
 

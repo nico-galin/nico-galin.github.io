@@ -5,8 +5,9 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Navigation from "../../components/Navigation";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import type { NextPage } from "next";
 
-const Home = () => {
+const Home: NextPage = () => {
   const router = useRouter();
   const { width } = useWindowDimensions();
 
