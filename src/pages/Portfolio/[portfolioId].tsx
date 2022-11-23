@@ -26,7 +26,7 @@ const Portfolio: NextPage<Portfolio_Props> = ({
   const router = useRouter();
   if (!hexagons) router.push("/");
   const ref = useRef() as MutableRefObject<HTMLElement>;
-  const paths = router.asPath.split("/");
+  const paths = router.asPath.split("/").filter((el) => !!el);
   const tab = paths[paths.length - 1];
   const { width } = useWindowDimensions();
   const { events } = useDraggable(ref, { decayRate: 0.8 });
