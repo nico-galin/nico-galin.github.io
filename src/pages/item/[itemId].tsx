@@ -12,6 +12,7 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import type { ParsedUrlQuery } from "querystring";
 import type { Hexagon as HexagonType } from "../../models/Hexagon";
 import Navigation from "../../components/Navigation";
+import Head from "next/head";
 
 const itemTailGrid = [
   ["null", "", "light"],
@@ -117,7 +118,10 @@ const Item: NextPage<Item_Props> = ({ data }) => {
 
   return (
     <>
-      <title>Nico Galin | {data.title}</title>
+      <Head>
+        <title>Nico Galin | {data.title}</title>
+        <meta name="description" content={data.description} key="desc" />
+      </Head>
       <Navigation />
       <div className={styles.wrapper}>
         <div className={styles.container}>

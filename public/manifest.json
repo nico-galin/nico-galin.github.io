@@ -1,0 +1,44 @@
+{
+  "short_name": "Nico Galin",
+  "name": "Nico Galin: Portfolio, Resume, and Contact",
+  "icons": [
+    {
+      "src": "/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#1c1c1c",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#DA8E1C",
+  "shortcuts": [
+    {
+      "name": "View Nico's portfolio",
+      "short_name": "Portfolio",
+      "description": "View Nico's portfolio",
+      "url": "/portfolio/iconography?source=pwa",
+      "icons": [{ "src": "/icons-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Want to contact Nico?",
+      "short_name": "Contact",
+      "description": "View Nico's contact information.",
+      "url": "/contact?source=pwa",
+      "icons": [{ "src": "/icons-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "description": "I create modern websites, apps, and tools with Human-Centered Design principles. Oh, and I love minimalism."
+}

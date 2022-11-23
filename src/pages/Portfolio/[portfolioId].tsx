@@ -14,6 +14,7 @@ import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import type { Hexagon } from "../../models/Hexagon";
 import type { ParsedUrlQuery } from "querystring";
 import Navigation from "../../components/Navigation";
+import Head from "next/head";
 
 interface Portfolio_Props {
   hexagons: Hexagon[];
@@ -56,7 +57,14 @@ const Portfolio: NextPage<Portfolio_Props> = ({
 
   return (
     <>
-      <title>Nico Galin | Portfolio</title>
+      <Head>
+        <title>Nico Galin | Portfolio</title>
+        <meta
+          name="description"
+          content="View Nico's iconography, design, and development work in an interactive portal."
+          key="desc"
+        />
+      </Head>
       <Navigation />
       <div className={styles.container}>
         <div className={styles.menu}>

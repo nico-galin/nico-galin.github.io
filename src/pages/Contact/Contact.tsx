@@ -8,6 +8,7 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useRouter } from "next/router";
 import Navigation from "../../components/Navigation";
 import type { NextPage } from "next";
+import Head from "next/head";
 
 const Contact: NextPage = () => {
   const router = useRouter();
@@ -48,7 +49,14 @@ const Contact: NextPage = () => {
   };
   return (
     <>
-      <title>Nico Galin | Contact</title>
+      <Head>
+        <title>Nico Galin | Contact</title>
+        <meta
+          name="description"
+          content="Contact Nico via LinkedIn, Email, Instagram, Handshake, and more."
+          key="desc"
+        />
+      </Head>
       <Navigation />
       <div className={styles.container}>
         <div className={styles.vignette} />

@@ -67,7 +67,7 @@ const Navigation = () => {
             initial={{ width: "100%" }}
             animate={{ width: selBarWidth }}
             transition={{
-              x: { duration: 0.4 },
+              x: { duration: 0.3 },
               default: { ease: "easeInOut" },
             }}
             layoutId="nav-selBar"

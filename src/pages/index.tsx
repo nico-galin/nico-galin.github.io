@@ -6,6 +6,7 @@ import Navigation from "../components/Navigation";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import type { NextPage } from "next";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -13,7 +14,24 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <title>Nico Galin</title>
+      <Head>
+        <title>Nico Galin</title>
+        <meta
+          name="description"
+          content="I create modern websites, apps, and tools with Human-Centered Design principles. Oh, and I love minimalism."
+          key="desc"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#1c1c1c" />
+
+        <meta property="og:title" content="Nico Galin" />
+        <meta
+          property="og:description"
+          content="I create modern websites, apps, and tools with Human-Centered Design principles. Oh, and I love minimalism."
+        />
+        <meta property="og:image" content="%PUBLIC_URL%/site_preview.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      </Head>
       <Navigation />
       <div className={styles.wrapper}>
         <div className={styles.edgeLine} />

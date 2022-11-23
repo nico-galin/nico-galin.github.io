@@ -6,6 +6,7 @@ import ResumeSection from "../../components/ResumeSection/ResumeSection";
 import Hexagon from "../../components/Hexagon/Hexagon";
 import Navigation from "../../components/Navigation";
 import type { NextPage } from "next";
+import Head from "next/head";
 
 const experienceRaw: { [key: string]: any } = {};
 resume.experience.forEach((exp, ind) => {
@@ -64,8 +65,15 @@ const combineYears = (years: string[]) => {
 const Resume: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Nico Galin | Resume</title>
+        <meta
+          name="description"
+          content="View Nico's resume in a gorgeous format."
+          key="desc"
+        />
+      </Head>
       <Navigation />
-      <title>Nico Galin | Resume</title>
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.category}>
