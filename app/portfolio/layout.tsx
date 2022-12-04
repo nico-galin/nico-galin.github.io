@@ -1,5 +1,6 @@
 'use client';
 
+import Head from 'next/head';
 import Link from 'next/link';
 import { useSelectedLayoutSegments } from 'next/navigation';
 import styles from './Portfolio.module.scss';
@@ -10,7 +11,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const segment = segments[segments.length - 1];
   return (
     <>
-      <head>
+      <Head>
         <title key="title">Portfolio | Nico Galin</title>
         <meta name="description" content={description} key="desc" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,7 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta property="og:image" content="%PUBLIC_URL%/site_preview.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
-      </head>
+      </Head>
       <div>
         {segment == 'icons' || segment == 'dev' ? (
           <div className={styles.menu}>

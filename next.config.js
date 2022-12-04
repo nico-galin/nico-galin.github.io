@@ -4,5 +4,5 @@ module.exports = {
   images: {
     domains: [],
   },
-  experimental: { appDir: true },
+  experimental: { appDir: true, allowMiddlewareResponseBody: true },
 };

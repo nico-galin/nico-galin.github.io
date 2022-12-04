@@ -5,6 +5,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions';
 import MenuIcon from '../MenuIcon/MenuIcon';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
+import Image from 'next/image';
 
 const Navigation = () => {
   const segment = useSelectedLayoutSegment();
@@ -19,13 +20,13 @@ const Navigation = () => {
     if (fullscreenNavOpen) toggleFullscreenNav();
   };
 
-  let selBarWidth = '100%';
+  let selBarLeft = '0';
   if (segment === 'portfolio' || segment === 'item') {
-    selBarWidth = '81%';
+    selBarLeft = '20%';
   } else if (segment === 'resume') {
-    selBarWidth = '54%';
+    selBarLeft = '48%';
   } else if (segment === 'contact') {
-    selBarWidth = '27%';
+    selBarLeft = '73%';
   }
 
   const navItems = (
@@ -86,7 +87,13 @@ const Navigation = () => {
           className={styles.navigation}
           style={!width || width <= 850 ? { display: 'none' } : {}}
         >
-          <div className={styles.selBar} style={{ width: selBarWidth }} />
+          <Image
+            className={styles.selBar}
+            src={require('../../assets/images/nav_bg.svg')}
+            alt={'navbg'}
+            height={100}
+            style={{ left: selBarLeft }}
+          />
           {navItems}
         </ul>
       </nav>
