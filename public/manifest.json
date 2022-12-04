@@ -29,7 +29,7 @@
       "name": "View Nico's portfolio",
       "short_name": "Portfolio",
       "description": "View Nico's portfolio",
-      "url": "/portfolio/iconography?source=pwa",
+      "url": "/portfolio/icons?source=pwa",
       "icons": [{ "src": "/icons-192.png", "sizes": "192x192" }]
     },
     {

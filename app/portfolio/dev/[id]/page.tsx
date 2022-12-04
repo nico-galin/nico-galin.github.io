@@ -1,64 +1,61 @@
-import { useMemo } from "react";
-import styles from "./Item.module.scss";
-import portfolio from "../../constants/portfolio";
-import Hexagon from "../../components/Hexagon/Hexagon";
-import HexGrid from "../../components/HexGrid/HexGrid";
-import validations from "../../utils/validations";
-import Button from "../../components/Button/Button";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
-import { useRouter } from "next/router";
-import type Project from "../../models/Project";
-import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import type { ParsedUrlQuery } from "querystring";
-import type { Hexagon as HexagonType } from "../../models/Hexagon";
-import Navigation from "../../components/Navigation";
-import Head from "next/head";
+'use client';
+
+import { useMemo } from 'react';
+import styles from './Item.module.scss';
+import portfolio from '../../../../constants/portfolio';
+import Hexagon from '../../../../components/Hexagon/Hexagon';
+import HexGrid from '../../../../components/HexGrid/HexGrid';
+import validations from '../../../../utils/validations';
+import Button from '../../../../components/Button/Button';
+import useWindowDimensions from '../../../../hooks/useWindowDimensions';
+import { useRouter } from 'next/navigation';
+import type { Hexagon as HexagonType } from '../../../../models/Hexagon';
+import Head from 'next/head';
 
 const itemTailGrid = [
-  ["null", "", "light"],
-  ["null", "", "colored"],
-  ["null", "", "invisible"],
-  ["null", "", "light"],
-  ["null", "", "colored"],
-  ["null", "", "colored"],
-  ["null", "", "light"],
-  ["null", "", "invisible"],
-  ["null", "", "invisible"],
+  ['null', '', 'light'],
+  ['null', '', 'colored'],
+  ['null', '', 'invisible'],
+  ['null', '', 'light'],
+  ['null', '', 'colored'],
+  ['null', '', 'colored'],
+  ['null', '', 'light'],
+  ['null', '', 'invisible'],
+  ['null', '', 'invisible'],
 ];
 
 const projectTailGrid = [
-  ["null", "", "invisible"],
-  ["null", "", "colored"],
-  ["null", "", "colored"],
-  ["null", "", "invisible"],
-  ["null", "", "dark"],
-  ["null", "", "dark"],
-  ["null", "", "colored"],
-  ["null", "", "colored"],
+  ['null', '', 'invisible'],
+  ['null', '', 'colored'],
+  ['null', '', 'colored'],
+  ['null', '', 'invisible'],
+  ['null', '', 'dark'],
+  ['null', '', 'dark'],
+  ['null', '', 'colored'],
+  ['null', '', 'colored'],
 ];
 
-interface Item_Props {
-  data: Project;
+interface Props {
+  params: {
+    id: string;
+  };
 }
 
-const Item: NextPage<Item_Props> = ({ data }) => {
+export default function Item({ params }: Props) {
   const router = useRouter();
   const { width } = useWindowDimensions();
+  const data = portfolio[params.id];
 
   const goBack = () => {
-    if (data != null && data.type === "project") {
-      router.push("/portfolio/projects");
-    } else {
-      router.push("/portfolio/iconography");
-    }
+    router.back();
   };
 
   const detailedInfo = useMemo(
     () =>
       validations.isNotBlank(data) &&
       !!data &&
-      data.type == "project" && (
-        <div className={styles.rightColumn} style={{ display: "block" }}>
+      data.type == 'project' && (
+        <div className={styles.rightColumn} style={{ display: 'block' }}>
           {!!data.categories &&
             Object.keys(data.categories).map((cat: string, ind: number) =>
               !!width && width > 850 ? (
@@ -101,7 +98,7 @@ const Item: NextPage<Item_Props> = ({ data }) => {
             <p className={styles.title}>{data.title}</p>
           </div>
           <p className={styles.description}>{data.description}</p>
-          {data.type === "project" && !!width && width <= 850 && detailedInfo}
+          {data.type === 'project' && !!width && width <= 850 && detailedInfo}
           {validations.isNotBlank(data.externalUrl) &&
             validations.isNotBlank(data.externalSiteName) && (
               <div className={styles.externalBtn}>
@@ -122,7 +119,6 @@ const Item: NextPage<Item_Props> = ({ data }) => {
         <title>{data.title} | Nico Galin</title>
         <meta name="description" content={data.description} key="desc" />
       </Head>
-      <Navigation />
       <div className={styles.wrapper}>
         <div className={styles.container}>
           {!!data && (
@@ -139,13 +135,13 @@ const Item: NextPage<Item_Props> = ({ data }) => {
                     <Hexagon
                       size={!!width && width > 850 ? 520 : 250}
                       imgUrl={data.imageUrl}
-                      color={data.type === "project" ? "colored" : "dark"}
+                      color={data.type === 'project' ? 'colored' : 'dark'}
                       nohover
                       large
                     />
                   </div>
                 </div>
-                {data.type === "icon" ? (
+                {data.type === 'icon' ? (
                   <div className={styles.hexagonTailIcon}>
                     <HexGrid
                       size={!!width && width > 850 ? 80 : 40}
@@ -168,7 +164,7 @@ const Item: NextPage<Item_Props> = ({ data }) => {
                 )}
               </div>
               {!!width && width <= 850 ? itemInfo : null}
-              {data.type === "project" &&
+              {data.type === 'project' &&
                 !!width &&
                 width > 850 &&
                 detailedInfo}
@@ -178,24 +174,12 @@ const Item: NextPage<Item_Props> = ({ data }) => {
       </div>
     </>
   );
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  return {
-    paths: Object.keys(portfolio).map((itemId: string) => ({
-      params: { itemId },
-    })),
-    fallback: false,
-  };
-};
-
-interface QueryParams extends ParsedUrlQuery {
-  itemId: string;
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { itemId } = params as QueryParams;
-  return { props: { data: portfolio[itemId] } };
-};
-
-export default Item;
+export async function generateStaticParams() {
+  return Object.keys(portfolio)
+    .filter((key) => portfolio[key].type == 'project')
+    .map((el) => ({
+      id: el,
+    }));
+}
